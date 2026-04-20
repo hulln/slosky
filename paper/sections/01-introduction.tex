@@ -1,0 +1,9 @@
+\section{Introduction}
+
+Bluesky and the wider ATProto ecosystem are becoming increasingly relevant as a source of public social-media data. For smaller languages such as Slovene, this creates an opportunity to build new corpora from a platform that is both technically distinctive and still relatively underused in language-resource work.
+
+This paper addresses the problem of constructing a reliable Slovene Bluesky corpus from public data. The main challenge is not only collection, but also deciding what should count as a Slovene post. Language tags are useful but imperfect, and posts by Slovene-linked users are not automatically Slovene. A defensible corpus therefore requires both protocol-aware collection and explicit validation.
+
+The paper asks four questions. First, can a usable Slovene Bluesky corpus be built from public ATProto data? Second, how far can collection move beyond a simple \texttt{langs=sl} strategy? Third, which inclusion rules are reliable enough for a main corpus? Fourth, what are the basic properties of the resulting corpus?
+
+The main contribution of the paper is methodological. It presents a multi-PDS, ATProto-based workflow for recovering currently available public posts, combines full-history account backfill with conservative post-level language filtering, and documents the validation decisions that lead to the final corpus definition.

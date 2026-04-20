@@ -1,0 +1,3 @@
+# Provisional Abstract Opening
+
+This paper presents a corpus of currently recoverable public Slovene-language posts from Bluesky, collected through a protocol-native ATProto pipeline. The historical part of the corpus is built by enumerating public repositories with post records and recovering current `app.bsky.feed.post` records from those repositories, after which live collection continues through the public repository event stream. The paper evaluates the usefulness of post-level language tags as a practical corpus-building filter, reports a manual precision check on a random sample, and uses a small recall probe to estimate what kinds of Slovene posts may be missed when relying on post-level language tags alone.

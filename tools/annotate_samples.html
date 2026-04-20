@@ -1,0 +1,805 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Slosky Annotation Tool</title>
+    <style>
+      :root {
+        --bg: #ffffff;
+        --paper: #ffffff;
+        --ink: #000000;
+        --muted: #444444;
+        --line: #bfbfbf;
+        --accent: #000000;
+        --accent-soft: #efefef;
+        --warn: #000000;
+        --warn-soft: #efefef;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--ink);
+        background: var(--bg);
+      }
+
+      .page {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 16px;
+      }
+
+      .hero {
+        background: var(--paper);
+        border: 1px solid var(--line);
+        border-radius: 0;
+        padding: 16px;
+        box-shadow: none;
+      }
+
+      h1,
+      h2 {
+        margin: 0 0 12px;
+        font-weight: 600;
+      }
+
+      p {
+        margin: 0 0 10px;
+        line-height: 1.45;
+      }
+
+      .muted {
+        color: var(--muted);
+      }
+
+      .layout {
+        display: grid;
+        grid-template-columns: 320px 1fr;
+        gap: 12px;
+        margin-top: 12px;
+      }
+
+      .panel,
+      .card {
+        background: var(--paper);
+        border: 1px solid var(--line);
+        border-radius: 0;
+        padding: 14px;
+        box-shadow: none;
+      }
+
+      .stack > * + * {
+        margin-top: 12px;
+      }
+
+      label {
+        display: block;
+        font-size: 0.95rem;
+        margin-bottom: 6px;
+      }
+
+      input[type="file"],
+      textarea {
+        width: 100%;
+      }
+
+      textarea {
+        min-height: 88px;
+        resize: vertical;
+        border: 1px solid var(--line);
+        border-radius: 0;
+        padding: 8px 10px;
+        font: inherit;
+        background: #fff;
+      }
+
+      button {
+        appearance: none;
+        border: 1px solid var(--ink);
+        background: var(--paper);
+        color: var(--ink);
+        border-radius: 0;
+        padding: 8px 12px;
+        font: inherit;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #f2f2f2;
+      }
+
+      button.primary {
+        background: var(--accent);
+        border-color: var(--accent);
+        color: white;
+      }
+
+      button.primary:hover {
+        background: #222222;
+      }
+
+      .button-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .pill {
+        display: inline-block;
+        padding: 5px 10px;
+        border-radius: 0;
+        border: 1px solid var(--line);
+        background: #ffffff;
+        font-size: 0.92rem;
+      }
+
+      .meta-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+      }
+
+      .meta-item {
+        padding: 12px;
+        border-radius: 0;
+        background: #ffffff;
+        border: 1px solid var(--line);
+      }
+
+      .meta-item strong {
+        display: block;
+        font-size: 0.85rem;
+        color: var(--muted);
+        margin-bottom: 4px;
+      }
+
+      .text-box {
+        margin-top: 16px;
+        padding: 18px;
+        border-radius: 0;
+        background: #fff;
+        border: 1px solid var(--line);
+        min-height: 180px;
+        line-height: 1.6;
+        font-size: 1.08rem;
+        white-space: pre-wrap;
+      }
+
+      .label-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        margin-top: 14px;
+      }
+
+      .label-btn {
+        text-align: left;
+        border-radius: 0;
+        padding: 12px 14px;
+        border: 1px solid var(--line);
+        background: #ffffff;
+      }
+
+      .label-btn small {
+        display: block;
+        color: var(--muted);
+        margin-top: 4px;
+        line-height: 1.35;
+      }
+
+      .label-btn.active {
+        background: var(--accent-soft);
+        border-color: var(--accent);
+      }
+
+      .label-btn.warn.active {
+        background: var(--warn-soft);
+        border-color: var(--warn);
+      }
+
+      .status {
+        margin-top: 10px;
+        color: var(--muted);
+      }
+
+      .progress-bar {
+        width: 100%;
+        height: 12px;
+        border-radius: 0;
+        background: #dddddd;
+        overflow: hidden;
+      }
+
+      .progress-bar > span {
+        display: block;
+        height: 100%;
+        background: #000000;
+        width: 0;
+      }
+
+      .counts {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+      }
+
+      .counts .meta-item {
+        padding: 10px;
+      }
+
+      .shortcut-line {
+        margin-top: 6px;
+        font-size: 0.92rem;
+      }
+
+      .notes-block {
+        margin-top: 16px;
+      }
+
+      .reason-block {
+        margin-top: 16px;
+      }
+
+      .reason-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 8px;
+      }
+
+      .reason-btn {
+        border: 1px solid var(--line);
+        background: #ffffff;
+        padding: 6px 10px;
+      }
+
+      .reason-btn.active {
+        background: var(--accent-soft);
+        border-color: var(--accent);
+      }
+
+      .label-btn .shortcut {
+        display: inline-block;
+        min-width: 18px;
+        font-weight: 700;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      @media (max-width: 900px) {
+        .layout {
+          grid-template-columns: 1fr;
+        }
+
+        .meta-grid,
+        .label-grid,
+        .counts {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <section class="hero">
+        <h1>Slosky Annotation Tool</h1>
+        <p>
+          Load a CSV, choose a label, and move through the sample quickly. Number keys and label
+          clicks can advance automatically.
+        </p>
+        <p class="muted">
+          Suggested files:
+          <code>outputs/samples/strict_core_validation_sample.csv</code> and
+          <code>outputs/samples/strict_review_validation_sample.csv</code>
+        </p>
+      </section>
+
+      <div class="layout">
+        <aside class="panel stack">
+          <div>
+            <label for="csvFile">1. Load CSV</label>
+            <input id="csvFile" type="file" accept=".csv,text/csv">
+          </div>
+
+          <div class="button-row">
+            <button id="saveProgress">Save Browser Copy</button>
+            <button id="restoreProgress">Restore Browser Copy</button>
+            <button id="clearProgress">Clear Browser Copy</button>
+          </div>
+
+          <div>
+            <label for="jumpTo">2. Jump To Row</label>
+            <input id="jumpTo" type="number" min="1" step="1">
+          </div>
+
+          <div class="button-row">
+            <button id="prevBtn">Previous</button>
+            <button id="nextBtn">Next</button>
+            <button id="nextUnlabeledBtn">Next Unlabeled</button>
+            <button id="toggleNotesBtn">Show Notes</button>
+          </div>
+
+          <p class="shortcut-line muted">
+            Shortcuts:
+            <code>1</code> Slovene,
+            <code>2</code> Mixed,
+            <code>3</code> Not Slovene,
+            <code>4</code> Undeterminable,
+            <code>Enter</code> Next
+          </p>
+
+          <div class="button-row">
+            <button id="exportBtn" class="primary">Export Annotated CSV</button>
+          </div>
+
+          <div class="progress-bar" aria-hidden="true">
+            <span id="progressFill"></span>
+          </div>
+          <div id="progressText" class="status">No file loaded yet.</div>
+
+          <div class="counts">
+            <div class="meta-item"><strong>Slovene-dominant</strong><span id="countSlDom">0</span></div>
+            <div class="meta-item"><strong>Mixed-with-Slovene</strong><span id="countMixed">0</span></div>
+            <div class="meta-item"><strong>Not-Slovene</strong><span id="countNot">0</span></div>
+            <div class="meta-item"><strong>Undeterminable</strong><span id="countUndet">0</span></div>
+          </div>
+        </aside>
+
+        <main class="card">
+          <div id="emptyState">
+            <h2>No sample loaded</h2>
+            <p>
+              Open one of the validation CSV files first. After that, this page will show one post
+              at a time and let you annotate it.
+            </p>
+          </div>
+
+          <div id="annotator" class="hidden">
+            <div class="meta-grid">
+              <div class="meta-item"><strong>Row</strong><span id="rowNumber"></span></div>
+              <div class="meta-item"><strong>Langs</strong><span id="langs"></span></div>
+            </div>
+
+            <div class="text-box" id="postText"></div>
+
+            <div class="label-grid">
+              <button class="label-btn" data-label="Slovene-dominant">
+                <span class="shortcut">1</span> Slovene-dominant
+                <small>Mainly Slovene, even with short foreign insertions.</small>
+              </button>
+              <button class="label-btn" data-label="Mixed-with-Slovene">
+                <span class="shortcut">2</span> Mixed-with-Slovene
+                <small>Meaningful Slovene content, but substantial other-language content too.</small>
+              </button>
+              <button class="label-btn warn" data-label="Not-Slovene">
+                <span class="shortcut">3</span> Not-Slovene
+                <small>Not meaningfully in Slovene.</small>
+              </button>
+              <button class="label-btn warn" data-label="Undeterminable/too-short">
+                <span class="shortcut">4</span> Undeterminable/too-short
+                <small>Too short or too unclear for a reliable judgement.</small>
+              </button>
+            </div>
+
+            <div class="reason-block">
+              <label>Quick reason (optional)</label>
+              <div class="reason-row" id="reasonButtons">
+                <button class="reason-btn" type="button" data-reason="blank_post">Blank</button>
+                <button class="reason-btn" type="button" data-reason="emoji_emoticon_only">Emoji/emoticon only</button>
+                <button class="reason-btn" type="button" data-reason="link_only">Link only</button>
+                <button class="reason-btn" type="button" data-reason="too_short">Too short</button>
+                <button class="reason-btn" type="button" data-reason="mixed_with_english">Mixed with English</button>
+                <button class="reason-btn" type="button" data-reason="english_only">English only</button>
+                <button class="reason-btn" type="button" data-reason="">Clear reason</button>
+              </div>
+            </div>
+
+            <div id="notesBlock" class="notes-block hidden">
+              <label for="notes">Notes</label>
+              <textarea id="notes" placeholder="Optional note"></textarea>
+            </div>
+
+            <p class="status" id="savedState"></p>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script>
+      const state = {
+        fileName: "",
+        rows: [],
+        index: 0,
+      };
+
+      const csvFile = document.getElementById("csvFile");
+      const jumpTo = document.getElementById("jumpTo");
+      const prevBtn = document.getElementById("prevBtn");
+      const nextBtn = document.getElementById("nextBtn");
+      const nextUnlabeledBtn = document.getElementById("nextUnlabeledBtn");
+      const toggleNotesBtn = document.getElementById("toggleNotesBtn");
+      const exportBtn = document.getElementById("exportBtn");
+      const saveProgressBtn = document.getElementById("saveProgress");
+      const restoreProgressBtn = document.getElementById("restoreProgress");
+      const clearProgressBtn = document.getElementById("clearProgress");
+      const emptyState = document.getElementById("emptyState");
+      const annotator = document.getElementById("annotator");
+      const rowNumber = document.getElementById("rowNumber");
+      const langs = document.getElementById("langs");
+      const postText = document.getElementById("postText");
+      const notesBlock = document.getElementById("notesBlock");
+      const notes = document.getElementById("notes");
+      const savedState = document.getElementById("savedState");
+      const progressFill = document.getElementById("progressFill");
+      const progressText = document.getElementById("progressText");
+      const reasonButtons = Array.from(document.querySelectorAll(".reason-btn"));
+      const countSlDom = document.getElementById("countSlDom");
+      const countMixed = document.getElementById("countMixed");
+      const countNot = document.getElementById("countNot");
+      const countUndet = document.getElementById("countUndet");
+      const labelButtons = Array.from(document.querySelectorAll(".label-btn"));
+      const labelOrder = [
+        "Slovene-dominant",
+        "Mixed-with-Slovene",
+        "Not-Slovene",
+        "Undeterminable/too-short",
+      ];
+
+      function storageKey() {
+        return state.fileName ? `slosky-annotator:${state.fileName}` : "";
+      }
+
+      function normalizeRows(rows) {
+        return rows.map((row) => ({
+          ...row,
+          label: row.label ?? "",
+          notes: row.notes ?? "",
+          reason: row.reason ?? "",
+        }));
+      }
+
+      function parseCsv(text) {
+        const rows = [];
+        let row = [];
+        let value = "";
+        let inQuotes = false;
+
+        for (let i = 0; i < text.length; i += 1) {
+          const char = text[i];
+          const next = text[i + 1];
+
+          if (inQuotes) {
+            if (char === '"' && next === '"') {
+              value += '"';
+              i += 1;
+            } else if (char === '"') {
+              inQuotes = false;
+            } else {
+              value += char;
+            }
+            continue;
+          }
+
+          if (char === '"') {
+            inQuotes = true;
+          } else if (char === ",") {
+            row.push(value);
+            value = "";
+          } else if (char === "\n") {
+            row.push(value);
+            rows.push(row);
+            row = [];
+            value = "";
+          } else if (char !== "\r") {
+            value += char;
+          }
+        }
+
+        if (value.length > 0 || row.length > 0) {
+          row.push(value);
+          rows.push(row);
+        }
+
+        const headers = rows.shift() || [];
+        return rows.map((values) => {
+          const item = {};
+          headers.forEach((header, index) => {
+            item[header] = values[index] ?? "";
+          });
+          return item;
+        });
+      }
+
+      function escapeCsvValue(value) {
+        const text = String(value ?? "");
+        if (/[",\n]/.test(text)) {
+          return `"${text.replace(/"/g, '""')}"`;
+        }
+        return text;
+      }
+
+      function serializeCsv(rows) {
+        if (!rows.length) {
+          return "";
+        }
+        const headers = Object.keys(rows[0]);
+        const lines = [headers.map(escapeCsvValue).join(",")];
+        for (const row of rows) {
+          lines.push(headers.map((header) => escapeCsvValue(row[header])).join(","));
+        }
+        return lines.join("\n");
+      }
+
+      function renderCounts() {
+        const counts = {
+          "Slovene-dominant": 0,
+          "Mixed-with-Slovene": 0,
+          "Not-Slovene": 0,
+          "Undeterminable/too-short": 0,
+        };
+        for (const row of state.rows) {
+          if (row.label in counts) {
+            counts[row.label] += 1;
+          }
+        }
+        countSlDom.textContent = counts["Slovene-dominant"];
+        countMixed.textContent = counts["Mixed-with-Slovene"];
+        countNot.textContent = counts["Not-Slovene"];
+        countUndet.textContent = counts["Undeterminable/too-short"];
+      }
+
+      function renderProgress() {
+        const done = state.rows.filter((row) => row.label).length;
+        const total = state.rows.length || 1;
+        const percent = Math.round((done / total) * 100);
+        progressFill.style.width = `${percent}%`;
+        progressText.textContent = `${done} / ${state.rows.length} rows annotated (${percent}%)`;
+      }
+
+      function renderRow() {
+        if (!state.rows.length) {
+          emptyState.classList.remove("hidden");
+          annotator.classList.add("hidden");
+          return;
+        }
+
+        emptyState.classList.add("hidden");
+        annotator.classList.remove("hidden");
+
+        const row = state.rows[state.index];
+        rowNumber.textContent = `${state.index + 1} / ${state.rows.length}`;
+        langs.textContent = row.langs || "";
+        postText.textContent = row.text || "";
+        notes.value = row.notes || "";
+        jumpTo.value = String(state.index + 1);
+
+        for (const button of labelButtons) {
+          button.classList.toggle("active", button.dataset.label === row.label);
+        }
+
+        for (const button of reasonButtons) {
+          button.classList.toggle("active", button.dataset.reason === (row.reason || ""));
+        }
+
+        savedState.textContent = row.label
+          ? `Current label: ${row.label}`
+          : "No label selected yet.";
+
+        renderCounts();
+        renderProgress();
+      }
+
+      function saveBrowserCopy() {
+        if (!state.rows.length || !storageKey()) {
+          return;
+        }
+        localStorage.setItem(
+          storageKey(),
+          JSON.stringify({
+            index: state.index,
+            rows: state.rows,
+          })
+        );
+        savedState.textContent = "Saved to browser storage.";
+      }
+
+      function restoreBrowserCopy() {
+        const raw = storageKey() && localStorage.getItem(storageKey());
+        if (!raw) {
+          savedState.textContent = "No saved browser copy for this file.";
+          return;
+        }
+        const payload = JSON.parse(raw);
+        state.rows = normalizeRows(payload.rows || state.rows);
+        state.index = Math.min(payload.index || 0, Math.max(state.rows.length - 1, 0));
+        renderRow();
+        savedState.textContent = "Restored browser copy.";
+      }
+
+      function clearBrowserCopy() {
+        if (!storageKey()) {
+          return;
+        }
+        localStorage.removeItem(storageKey());
+        savedState.textContent = "Cleared browser copy.";
+      }
+
+      function goToPreviousRow() {
+        if (!state.rows.length) {
+          return;
+        }
+        state.index = Math.max(0, state.index - 1);
+        renderRow();
+      }
+
+      function goToNextRow() {
+        if (!state.rows.length) {
+          return;
+        }
+        state.index = Math.min(state.rows.length - 1, state.index + 1);
+        renderRow();
+      }
+
+      function goToNextUnlabeledRow() {
+        if (!state.rows.length) {
+          return;
+        }
+        const total = state.rows.length;
+        for (let offset = 1; offset <= total; offset += 1) {
+          const candidate = (state.index + offset) % total;
+          if (!state.rows[candidate].label) {
+            state.index = candidate;
+            renderRow();
+            return;
+          }
+        }
+      }
+
+      function setCurrentLabel(label, options = {}) {
+        if (!state.rows.length) {
+          return;
+        }
+        const { autoAdvance = true } = options;
+        state.rows[state.index].label = label;
+        renderRow();
+        if (autoAdvance && state.index < state.rows.length - 1) {
+          goToNextRow();
+        }
+      }
+
+      function setCurrentReason(reason) {
+        if (!state.rows.length) {
+          return;
+        }
+        state.rows[state.index].reason = reason;
+        renderRow();
+      }
+
+      function toggleNotes() {
+        const isHidden = notesBlock.classList.toggle("hidden");
+        toggleNotesBtn.textContent = isHidden ? "Show Notes" : "Hide Notes";
+      }
+
+      function exportCsv() {
+        if (!state.rows.length) {
+          return;
+        }
+        const csv = serializeCsv(state.rows);
+        const blob = new Blob([csv], { type: "text/csv;charset=utf-8" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        const baseName = state.fileName.replace(/\.csv$/i, "");
+        a.href = url;
+        a.download = `${baseName}_annotated.csv`;
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        URL.revokeObjectURL(url);
+      }
+
+      csvFile.addEventListener("change", async (event) => {
+        const [file] = event.target.files;
+        if (!file) {
+          return;
+        }
+        const text = await file.text();
+        state.fileName = file.name;
+        state.rows = normalizeRows(parseCsv(text));
+        state.index = 0;
+        renderRow();
+        savedState.textContent = `Loaded ${file.name}.`;
+      });
+
+      prevBtn.addEventListener("click", () => {
+        goToPreviousRow();
+      });
+
+      nextBtn.addEventListener("click", () => {
+        goToNextRow();
+      });
+
+      nextUnlabeledBtn.addEventListener("click", () => {
+        goToNextUnlabeledRow();
+      });
+
+      toggleNotesBtn.addEventListener("click", () => {
+        toggleNotes();
+      });
+
+      jumpTo.addEventListener("change", () => {
+        if (!state.rows.length) {
+          return;
+        }
+        const value = Number(jumpTo.value);
+        if (!Number.isFinite(value)) {
+          return;
+        }
+        state.index = Math.min(state.rows.length - 1, Math.max(0, value - 1));
+        renderRow();
+      });
+
+      notes.addEventListener("input", () => {
+        if (!state.rows.length) {
+          return;
+        }
+        state.rows[state.index].notes = notes.value;
+      });
+
+      for (const button of reasonButtons) {
+        button.addEventListener("click", () => {
+          setCurrentReason(button.dataset.reason);
+        });
+      }
+
+      for (const button of labelButtons) {
+        button.addEventListener("click", () => {
+          setCurrentLabel(button.dataset.label, { autoAdvance: true });
+        });
+      }
+
+      document.addEventListener("keydown", (event) => {
+        if (!state.rows.length) {
+          return;
+        }
+
+        const activeTag = document.activeElement ? document.activeElement.tagName : "";
+        const typingInField = activeTag === "TEXTAREA" || activeTag === "INPUT";
+
+        if (!typingInField && ["1", "2", "3", "4"].includes(event.key)) {
+          setCurrentLabel(labelOrder[Number(event.key) - 1], { autoAdvance: true });
+          event.preventDefault();
+          return;
+        }
+
+        if (!typingInField && event.key === "Enter") {
+          goToNextRow();
+          event.preventDefault();
+          return;
+        }
+
+        if (!typingInField && event.key === "ArrowLeft") {
+          goToPreviousRow();
+          event.preventDefault();
+          return;
+        }
+
+        if (!typingInField && event.key === "ArrowRight") {
+          goToNextRow();
+          event.preventDefault();
+        }
+      });
+
+      saveProgressBtn.addEventListener("click", saveBrowserCopy);
+      restoreProgressBtn.addEventListener("click", restoreBrowserCopy);
+      clearProgressBtn.addEventListener("click", clearBrowserCopy);
+      exportBtn.addEventListener("click", exportCsv);
+    </script>
+  </body>
+</html>

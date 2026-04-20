@@ -1,0 +1,74 @@
+% JTDH manuscript file derived from the official English template.
+% Compile with LuaLaTeX or XeLaTeX and biber.
+
+\documentclass{article}
+\usepackage{jtdh}
+\usepackage[english]{babel}
+\usepackage{url}
+\usepackage[hang,flushmargin]{footmisc}
+\usepackage{hyperref}
+\hypersetup{colorlinks = true, linkcolor = black, urlcolor = gray, citecolor = black, anchorcolor = black}
+\usepackage{booktabs}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{nicefrac}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage[backend=biber, style=apa, uniquelist=false]{biblatex}
+\addbibresource{references.bib}
+
+\usepackage[]{gb4e}
+\let\eachwordone=\sffamily
+\let\eachwordtwo=\sffamily
+
+\usepackage{enumitem}
+\graphicspath{{img/}}
+
+\aboverulesep=0ex
+\belowrulesep=0ex
+
+\title{A Community in Formation: Building and Analysing a Corpus of Slovene Posts on Bluesky}
+
+\author{
+  Nives HÜLL\textsuperscript{1}\orcidlink{0009-0004-1878-0102}
+}
+\institutions{
+  \textsuperscript{1}University of Ljubljana, Ljubljana, Slovenia \rorlink{05njb9z20}\par
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\input{sections/00-abstract}
+\end{abstract}
+\keywordseng{Bluesky, ATProto, Slovene, corpus construction, social media}
+
+\input{sections/01-introduction}
+\input{sections/02-related-work}
+\input{sections/03-data-and-methodology}
+\input{sections/04-validation}
+\input{sections/05-empirical-analysis}
+\input{sections/06-discussion}
+\input{sections/07-limitations-and-ethics}
+\input{sections/08-conclusion}
+
+\paragraph{Data and code availability.}
+The pseudonymized corpus is publicly available at Zenodo \parencite{hull2026slosky}. The collection and anonymization code is available at \url{https://github.com/hulln/slosky}.
+
+\acknowledgmenteng{
+Generative AI tools were used selectively during the coding, implementation, and writing phases. All generated content was independently reviewed, revised where necessary, and finalised by the author.
+}
+
+\urlstyle{same}
+\printbibliography
+
+\newpage
+\titleeng{Naslov prispevka v slovenščini}
+\begin{abstracteng}
+Povzetek v slovenščini bo dodan v poznejši fazi priprave članka. Končna različica mora vključevati slovenski naslov, slovenski povzetek in slovenske ključne besede, skladno s predlogo JTDH.
+\end{abstracteng}
+\keywordsslo{Bluesky, ATProto, slovenščina, korpus, družbena omrežja}
+
+\end{document}

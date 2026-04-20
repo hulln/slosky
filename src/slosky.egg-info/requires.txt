@@ -1,0 +1,5 @@
+atproto>=0.0.62
+fasttext>=0.9.3
+langdetect>=1.0.9
+langid>=1.1.6
+lingua-language-detector>=2.1.1
