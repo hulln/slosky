@@ -4,15 +4,32 @@
 \ProcessOptions\relax
 
 % fonts
-\usepackage[T1]{fontenc}
-%\usepackage[usefilenames,DefaultFeatures={Ligatures=TeX}]{plex-otf} %
-%\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
-
-% setting font:
-\usepackage[default]{sourcesanspro}
-\usepackage[sfmath]{kpfonts} %% sfmath option only to make math in sans serif. Probablye only for use when base font is sans serif.
-%\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
-\usepackage[T1]{fontenc}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{sourcesanspro}
+  \usepackage[sfmath]{kpfonts} %% sfmath option only to make math in sans serif. Probably only for use when base font is sans serif.
+  \renewcommand*\familydefault{\sfdefault}
+\else
+  \usepackage[sfmath]{kpfonts} %% sfmath option only to make math in sans serif. Probably only for use when base font is sans serif.
+  \usepackage{fontspec}
+  \defaultfontfeatures{Ligatures=TeX}
+  \setsansfont{SourceSansPro}[
+    Extension=.otf,
+    UprightFont=*-Regular,
+    ItalicFont=*-RegularIt,
+    BoldFont=*-Bold,
+    BoldItalicFont=*-BoldIt
+  ]
+  \setmainfont{SourceSansPro}[
+    Extension=.otf,
+    UprightFont=*-Regular,
+    ItalicFont=*-RegularIt,
+    BoldFont=*-Bold,
+    BoldItalicFont=*-BoldIt
+  ]
+  \renewcommand*\familydefault{\sfdefault}
+\fi
 
 % ORCID support
 \usepackage{orcidlink}
@@ -46,6 +63,13 @@
   papersize={16cm,23cm}
 }
 \AtBeginDocument{
+  % Remove visible PDF link borders while preserving clickable links.
+  \@ifpackageloaded{hyperref}{%
+    \hypersetup{
+      pdfborder = {0 0 0},
+      pdfborderstyle = {/S/U/W 0}
+    }%
+  }{}%
   
   \newgeometry{
     textheight=18.56cm,

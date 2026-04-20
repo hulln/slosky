@@ -30,6 +30,7 @@ The resulting expanded store contained 379,482 posts from 742 active authors, sp
 Each post in the expanded store was then classified individually to determine whether it should be included in the Slovene corpus. The classifier applied three binary signals:
 
 \begin{itemize}
+  \renewcommand\labelitemi{\textendash} % Use en-dash instead of bullet
   \item \textbf{Tag signal}: does the post's \texttt{langs} field contain \texttt{sl} or \texttt{sl-*}?
   \item \textbf{langid signal}: does the langid.py language identifier \parencite{lui2012langid} assign the label \texttt{sl} to the post text?
   \item \textbf{langdetect signal}: does the langdetect library \parencite{nakatani2010langdetect} assign Slovene a probability of at least 0.90?

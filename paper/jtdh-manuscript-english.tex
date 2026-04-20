@@ -1,13 +1,13 @@
 % JTDH manuscript file derived from the official English template.
 % Compile with LuaLaTeX or XeLaTeX and biber.
 
+\PassOptionsToPackage{draft,hidelinks}{hyperref}
 \documentclass{article}
 \usepackage{jtdh}
 \usepackage[english]{babel}
 \usepackage{url}
 \usepackage[hang,flushmargin]{footmisc}
 \usepackage{hyperref}
-\hypersetup{colorlinks = true, linkcolor = black, urlcolor = gray, citecolor = black, anchorcolor = black}
 \usepackage{booktabs}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -17,6 +17,7 @@
 \usepackage{tabularx}
 \usepackage[backend=biber, style=apa, uniquelist=false]{biblatex}
 \addbibresource{references.bib}
+\usepackage{textcomp}
 
 \usepackage[]{gb4e}
 \let\eachwordone=\sffamily
