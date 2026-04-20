@@ -1,0 +1,46 @@
+\section{Empirical Analysis}
+\label{sec:empirical}
+
+\subsection{Corpus profile}
+
+The final corpus contains 141,013 posts by 432 unique authors, spanning August 2023 to April 2026. Posts are distributed across four decision groups: 85,094 \texttt{core\_tag\_supported} (60.3\%), 46,134 \texttt{review\_model\_consensus\_only} (32.7\%), 5,632 \texttt{review\_langid\_only} (4.0\%), and 4,153 \texttt{review\_langdetect\_only} (2.9\%). The median post length is 86 characters.
+
+\subsection{Platform adoption and growth}
+
+Monthly post counts show one dominant structural break. In November 2024, Slovene post volume increased from 31 in October 2024 to 5,984 the following month, a 193-fold increase. Volume then stabilised at roughly 7,000--9,000 posts per month through most of 2025 and early 2026.
+
+Author first-seen dates are likewise concentrated in late 2024: 172 authors have their first included post in November 2024 and 50 in December 2024. The corpus nevertheless contains low but non-zero pre-November 2024 activity, with 30 authors whose first included post falls between August 2023 and October 2024.
+
+\subsection{Temporal patterns}
+
+Posting activity follows a clear daily rhythm consistent with Central European Time (UTC+1/UTC+2). A morning peak occurs at 09:00--10:00~UTC (10--11~AM local) and a stronger evening peak at 18:00--19:00~UTC (7--8~PM local). Activity is lowest between 01:00 and 04:00~UTC. This pattern is consistent with a community of primarily Slovenian-timezone users posting during breaks and after work.
+
+\subsection{Interactional structure}
+
+Using a mutually exclusive hierarchy that counts reply-quote combinations as replies, the corpus is dominated by reply posts. Of the 141,013 posts, 96,278 (68.3\%) are replies, 41,517 (29.4\%) are original posts, and 3,218 (2.3\%) are non-reply quote posts. The median reply is 77 characters, compared to 114 characters for original posts. This reply-heavy pattern suggests that Slovene Bluesky use is strongly oriented towards dialogue rather than broadcasting.
+
+The overall statistics mask a clear division between account types. Several accounts in the corpus---a national sports news outlet (\texttt{sportklubslovenija.bsky.social}), the SUP community account (\texttt{supdeska.bsky.social}), and an environmental organisation (\texttt{alpeadriagreen.bsky.social})---have reply rates of 0\%, functioning as pure broadcasters. Individual users, by contrast, often show reply rates exceeding 80--90\%. The inclusion of institutional broadcast accounts inflates the original-post count; among individual users the community is even more strongly conversational.
+
+Posts with emoji occur at a rate of 19.5\%, with at least one external URL in the post text at 12.6\%, hashtags at 4.9\%, and \mbox{@-mentions} at 1.2\%. The low hashtag rate is consistent with the conversational character of the corpus. Across the whole corpus, 11.2\% of posts embed a structured external link card, 8.0\% include images, 2.3\% are non-reply quote posts embedding another post, 0.5\% contain video, and 0.2\% combine a quote-post with attached media. Video is notably rare.
+
+\subsection{Author concentration and infrastructure}
+
+Despite having 432 identified authors, posting activity is heavily concentrated. The Gini coefficient of posts per author is 0.82. The top 10\% of authors (43 users) account for 69.6\% of all posts, and just 22 authors are responsible for 50\% of the corpus. The median author contributed 35 posts over the entire collection period. This power-law distribution is characteristic of social media corpora generally, though the concentration here is particularly pronounced given the small and still-forming community.
+
+Regarding platform infrastructure, 423 of 432 authors (97.9\%) are hosted on Bluesky's own PDS infrastructure (\texttt{*.host.bsky.network}), while 9 (2.1\%) are hosted on \texttt{eurosky.social}, a European-operated independent PDS. This confirms that the corpus is not restricted to a single server and that DID-based PDS resolution is operational in the collection workflow.
+
+Handle choice is slightly more varied. Of the 432 authors, 395 (91.4\%) use a \texttt{*.bsky.social} handle, 30 (6.9\%) use a user-owned custom domain, and 7 (1.6\%) use a \texttt{*.eurosky.social} subdomain. The custom-domain group contributed 13,303 posts (9.4\% of the corpus). Two authors combine a custom domain handle with \texttt{eurosky.social} hosting.
+
+Together, these figures show that most corpus authors use the default Bluesky configuration, while a smaller minority changed either their public handle, their hosting provider, or both.
+
+\subsection{Topics: hashtags and linked domains}
+
+Hashtag use is sparse but thematically informative. The most frequent hashtags are \texttt{\#supslovenija} (230 posts), \texttt{\#supdeska} (187), and \texttt{\#aquamarina} (177), all connected to the stand-up paddleboarding (SUP) community, which is evidently a well-represented subgroup. Other frequent hashtags include \texttt{\#pohvalanadan} (`praise a day'), \texttt{\#zelenjavajezakon} (`vegetables rule'), \texttt{\#catsofbluesky}, \texttt{\#slovenija}, \texttt{\#kava} (`coffee'), and \texttt{\#dobrojutro} (`good morning'), reflecting a mix of community ritual, current events, and platform culture.
+
+The most linked external domain is \texttt{media.tenor.com} (2,613 posts), indicating frequent GIF sharing, followed by the news portal \texttt{n1info.si} (2,548), the Bluesky link-sharing tool \texttt{ebx.sh} (1,804), the Slovene tech news site \texttt{tehnozvezdje.si} (1,236), and YouTube/\texttt{youtu.be} (1,436 combined). The national public broadcaster \texttt{rtvslo.si} (702) also features prominently. GIF sharing as the single most common link type underscores the informal and conversational register of the corpus.
+
+\subsection{Linguistic profile and multilinguality}
+
+A notable feature of the corpus is the frequency of mixed language tagging. Of the 141,013 posts, 58,416 (41.4\%) were tagged by their authors with both \texttt{sl} and \texttt{en} language codes. By contrast, the language identification model langid detected a non-Slovene primary language in only 7.3\% of posts. The predominant non-Slovene labels assigned by langid were Croatian (\textit{hr}: 4,506 posts) and Bosnian (\textit{bs}: 2,285 posts)---closely related South Slavic languages for which cross-label confusion by automatic detectors is common. Genuine English-dominant content was detected in only 278 posts.
+
+The high rate of \texttt{sl+en} author tagging without corresponding English detection by langid suggests a user-interface effect: Bluesky users with English-language app settings may have English added automatically to their post language tags, rather than this reflecting systematic code-switching at the post level. The corpus nevertheless contains posts with English lexical insertions within otherwise Slovene text, which are retained as authentic examples of the mixed-register writing characteristic of this community.
