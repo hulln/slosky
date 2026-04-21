@@ -1,27 +1,27 @@
 \section{Data Collection and Methodology}
 \label{sec:corpus-construction}
 
-The corpus was built through a layered pipeline: tagged discovery across the network, seed-author identification, full-history backfill from each author's home server, and post-level language filtering. Each phase is described below.
+The corpus was built through a layered pipeline: tagged discovery through public relay mechanisms, seed-author identification, backfill from each author's home server, and post-level language filtering. Each phase is described below.
 
 \subsection{Phase 1: Tagged discovery}
 
-Two complementary collection methods were used to discover Slovene-linked posts across the Bluesky network.
+Two complementary collection methods were used to discover Slovene-linked posts through public Bluesky relay infrastructure.
 
-First, a \textbf{historical crawl} enumerated all public repositories containing \texttt{app.bsky.feed.post} records via the ATProto relay endpoint \texttt{com.atproto.sync.listReposByCollection} on \texttt{bsky.network}. For each discovered repository, the author's DID was resolved to its home Personal Data Server (PDS), and the post records were fetched via \texttt{com.atproto.repo.listRecords} from that PDS. Only posts whose \texttt{langs} field contained the tag \texttt{sl} or any \texttt{sl-*} subtag were retained.
+First, a \textbf{historical crawl} queried the Bluesky collection directory for public repositories containing \texttt{app.bsky.feed.post} records. The relevant relay endpoint is \texttt{listReposByCollection} \parencite{atproto-sync,bsky-listreposbycollection}. For each discovered repository, the author's DID was resolved to its home Personal Data Server (PDS), and the post records were fetched via \texttt{listRecords} from that PDS. Only posts whose \texttt{langs} field contained the tag \texttt{sl} or any \texttt{sl-*} subtag were retained.
 
-Second, a \textbf{live firehose} subscriber connected to the public repository event stream (\texttt{com.atproto.sync.subscribeRepos} on \texttt{wss://bsky.network}) and processed post creation, update, and deletion events in real time, again retaining only Slovene-tagged posts. The firehose subscriber also handled account-level events (deletions, deactivations, suspensions) by marking the affected posts accordingly in the local store.
+Second, a \textbf{live firehose} subscriber connected to the public repository event stream (\texttt{subscribeRepos} on \path{wss://bsky.network}) and processed post creation, update, and deletion events in real time, again retaining only Slovene-tagged posts \parencite{atproto-streaming}. The firehose subscriber also handled account-level events (deletions, deactivations, suspensions) by marking the affected posts accordingly in the local store.
 
 Both sources stored their results in local SQLite databases, with posts keyed by their AT-URI and soft-deletion tracking for posts that were later removed by their authors.
 
 \subsection{Phase 2: Seed author identification}
 
-Every unique author DID that appeared in at least one Slovene-tagged post from either discovery source was collected into a seed author list. The resulting list defines the author population for the rest of the pipeline. The corpus is therefore not a sample of the Bluesky post stream, but a complete collection of posts from a defined set of discovered Slovene-linked accounts.
+Every unique author DID that appeared in at least one Slovene-tagged post from either discovery source was collected into a seed author list. The resulting list defines the author population for the rest of the pipeline. The corpus is therefore not a sample of the Bluesky post stream, but an author-centred collection of currently recoverable posts from a defined set of discovered Slovene-linked accounts.
 
-\subsection{Phase 3: Full-history backfill}
+\subsection{Phase 3: Author-history backfill}
 
-For each seed author, the complete surviving public post history was retrieved through ATProto repository access. Each author's DID was resolved through a public directory: \texttt{plc.directory} for \texttt{did:plc:} identifiers, or the \texttt{.well-known/did.json} endpoint for \texttt{did:web:} identifiers. The resolved PDS URL was cached locally to avoid repeated lookups. Posts were then fetched via paginated \texttt{com.atproto.repo.listRecords} calls to the author's home PDS.
+For each seed author, the available surviving public post history was retrieved through ATProto repository access. Each author's DID was resolved through a public directory: \path{plc.directory} for \path{did:plc:} identifiers, or the \path{.well-known/did.json} endpoint for \path{did:web:} identifiers. The resolved PDS URL was cached locally to avoid repeated lookups. Posts were then fetched via paginated \texttt{listRecords} calls to the author's home PDS.
 
-Because resolution goes through the DID rather than through a fixed domain, the backfill was not restricted to accounts on \texttt{bsky.social}; accounts hosted on any public ATProto PDS were handled identically. This phase retrieved \textit{all} posts from each seed author, regardless of language tag, transforming the corpus from a tag-filtered post stream into an author-centred collection. Deleted posts that were no longer available at crawl time are not recoverable through this method and are out of scope.
+Because resolution goes through the DID rather than through a fixed domain, the backfill was not restricted to accounts on \texttt{bsky.social}; accounts hosted on any public ATProto PDS were handled identically. This phase retrieved surviving public posts from each seed author, regardless of language tag, transforming the corpus from a tag-filtered post stream into an author-centred collection. Deleted posts that were no longer available at crawl time are not recoverable through this method and are out of scope.
 
 The resulting expanded store contained 379,482 posts from 742 active authors, spanning the earliest surviving post (May 2023) through the collection date (April 2026).
 
@@ -40,26 +40,26 @@ Before classification, URLs and @-mentions were stripped from the post text. Pos
 
 For posts meeting the minimum length, the combination of signals determines the decision group. Table~\ref{tab:decision-groups} summarises the mapping.
 
-\begin{table}[h]
+\begin{table}[htbp]
 \centering
 \caption{Decision groups assigned by the language filtering step. Only groups marked as \textit{included} are present in the final corpus.}
 \label{tab:decision-groups}
-\begin{tabularx}{\linewidth}{lXXXl}
+\begin{tabularx}{\linewidth}{Xcccc}
 \toprule
 Decision group & Tag & langid & langdetect & Status \\
 \midrule
-\texttt{core\_tag\_supported}        & \checkmark & \checkmark or --- & \checkmark or --- & Included \\
-\texttt{review\_model\_consensus\_only} & --- & \checkmark & \checkmark & Included \\
-\texttt{review\_langid\_only}         & --- & \checkmark & ---         & Included \\
-\texttt{review\_langdetect\_only}     & --- & ---         & \checkmark & Included \\
+Core tag-supported        & yes & yes or no & yes or no & Included \\
+Model consensus only & no & yes & yes & Included \\
+langid only         & no & yes & no         & Included \\
+langdetect only     & no & no         & yes & Included \\
 \midrule
-\texttt{review\_tag\_only}            & \checkmark & ---         & ---         & Excluded \\
-\texttt{review\_short\_tagged}        & \checkmark & \multicolumn{2}{l}{(text too short)} & Excluded \\
+Tag only            & yes & no         & no         & Excluded \\
+Short tagged        & yes & \multicolumn{2}{c}{not evaluated (text too short)} & Excluded \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
-The core group (\texttt{core\_tag\_supported}) contains posts where the author tagged the post as Slovene \textit{and} at least one language model agrees. The three model-supported review groups extend coverage to posts that were not tagged \texttt{sl} but are classified as Slovene by the models. Posts tagged \texttt{sl} with no model support (\texttt{review\_tag\_only}) and posts too short for reliable classification (\texttt{review\_short\_tagged}) were excluded after manual validation confirmed their higher noise rate (see Section~\ref{sec:validation}).
+The core group (\texttt{core\_tag\_supported}) contains posts where the author tagged the post as Slovene \textit{and} at least one language identifier agrees. The three identifier-supported review groups extend coverage to posts that were not tagged \texttt{sl} but are classified as Slovene by the language identifiers. Posts tagged \texttt{sl} with no identifier support (\texttt{review\_tag\_only}) and posts too short for reliable classification (\texttt{review\_short\_tagged}) were excluded after manual validation confirmed their higher noise rate (see Section~\ref{sec:validation}).
 
 In addition to langid and langdetect, two further language identification tools --- fastText \parencite{joulin2017bag} and Lingua --- were evaluated on the manually validated samples. On the comparable subset, all four detectors showed the same observed precision; the relevant difference was recall. The langid--langdetect pair recovered more acceptable Slovene posts than the alternatives, so the original detector pair was retained for the final corpus build.
 
@@ -67,7 +67,7 @@ In addition to langid and langdetect, two further language identification tools 
 
 The core and the three included review groups were merged into a single final corpus, deduplicated by post URI. Posts from multiple collection runs (historical crawl, live firehose, and incremental updates) were combined in this step, with the first occurrence of each URI retained. The final corpus contains 141,013 posts.
 
-Each post is stored with its text, timestamp, author-supplied language tags, post-type flags (reply, quote), embed kind, and the per-post classifier outputs (decision group, langid label, langdetect probability). Author and post identifiers are pseudonymised in the public release. No linguistic annotation is included; the corpus is released as a raw text resource.
+Each post in the analysis dataset is stored with its text, timestamp, author-supplied language tags, post-type flags (reply, quote), embed kind, and the per-post classifier outputs (decision group, langid label, langdetect probability). No linguistic annotation is included in the present corpus build.
 
 \subsection{Unit of analysis}
 

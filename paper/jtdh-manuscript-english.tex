@@ -1,13 +1,14 @@
 % JTDH manuscript file derived from the official English template.
 % Compile with LuaLaTeX or XeLaTeX and biber.
 
-\PassOptionsToPackage{draft,hidelinks}{hyperref}
 \documentclass{article}
 \usepackage{jtdh}
 \usepackage[english]{babel}
 \usepackage{url}
 \usepackage[hang,flushmargin]{footmisc}
+\usepackage{csquotes}
 \usepackage{hyperref}
+\hypersetup{colorlinks = true, linkcolor = black, urlcolor = gray, citecolor = black, anchorcolor = black}
 \usepackage{booktabs}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -15,6 +16,11 @@
 \usepackage{xcolor}
 \usepackage{graphicx}
 \usepackage{tabularx}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+\setlength{\floatsep}{8pt plus 2pt minus 2pt}
+\setlength{\textfloatsep}{8pt plus 2pt minus 2pt}
+\setlength{\intextsep}{8pt plus 2pt minus 2pt}
 \usepackage[backend=biber, style=apa, uniquelist=false]{biblatex}
 \addbibresource{references.bib}
 \usepackage{textcomp}
@@ -53,10 +59,11 @@
 \input{sections/05-empirical-analysis}
 \input{sections/06-discussion}
 \input{sections/07-limitations-and-ethics}
+\input{sections/09-future-work}
 \input{sections/08-conclusion}
 
-\paragraph{Data and code availability.}
-The pseudonymized corpus is publicly available at Zenodo \parencite{hull2026slosky}. The collection and anonymization code is available at \url{https://github.com/hulln/slosky}.
+\section{Data and Code Availability}
+The collection and anonymisation code is available at \url{https://github.com/hulln/slosky}. The corpus itself is not distributed as a full-text release at this stage; see Sections~\ref{sec:limitations} and~\ref{sec:future-work}. The corpus can be reconstructed from currently public ATProto data using the methodology and code described in this paper.
 
 \acknowledgmenteng{
 Generative AI tools were used selectively during the coding, implementation, and writing phases. All generated content was independently reviewed, revised where necessary, and finalised by the author.
@@ -66,9 +73,11 @@ Generative AI tools were used selectively during the coding, implementation, and
 \printbibliography
 
 \newpage
-\titleeng{Naslov prispevka v slovenščini}
+\titleeng{Skupnost v nastajanju: gradnja in analiza korpusa slovenskih objav na omrežju Bluesky}
 \begin{abstracteng}
 Povzetek v slovenščini bo dodan v poznejši fazi priprave članka. Končna različica mora vključevati slovenski naslov, slovenski povzetek in slovenske ključne besede, skladno s predlogo JTDH.
+
+Opomba k jeziku: Angleščina je v tem prispevku uporabljena izključno z namenom nagovarjanja širše mednarodne raziskovalne skupnosti na področjih digitalne humanistike, obdelave naravnega jezika in ATProta. Uporaba angleščine nikakor ne zmanjšuje pomena slovenščine v raziskovalnem in spletnem prostoru, katere vlogo še naprej dosledno in odločno zagovarjam.
 \end{abstracteng}
 \keywordsslo{Bluesky, ATProto, slovenščina, korpus, družbena omrežja}
 
