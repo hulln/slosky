@@ -1,7 +1,0 @@
-classla==2.2.1
-trankit==1.1.2
-torch==2.0.1
-transformers==4.43.3
-adapters==1.0.0
-huggingface_hub==0.24.7
-numpy==1.26.4

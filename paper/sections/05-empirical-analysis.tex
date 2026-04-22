@@ -5,48 +5,78 @@
 
 The final corpus contains 141,013 posts by 432 unique authors, spanning 9 August 2023 to 16 April 2026. Table~\ref{tab:corpus-profile} summarises its main properties. Posts are distributed across four decision groups: 85,094 \texttt{core\_tag\_supported} (60.3\%), 46,134 \texttt{review\_model\_consensus\_only} (32.7\%), 5,632 \texttt{review\_langid\_only} (4.0\%), and 4,153 \texttt{review\_langdetect\_only} (2.9\%).
 
+
 \begin{table}[htbp]
-\caption{Summary of the final Slovene Bluesky corpus.}
+\caption{Summary statistics for the final Slovene Bluesky corpus.}
 \label{tab:corpus-profile}
 \centering
-\begin{tabularx}{\linewidth}{Xr}
+\renewcommand{\arraystretch}{0.97}
+\begin{tabularx}{\linewidth}{@{}l>{\raggedleft\arraybackslash}X@{}}
 \toprule
-Measure & Value \\
+\textbf{Measure} & \textbf{Value} \\
 \midrule
 Posts & 141,013 \\
-Authors & 432 \\
+Unique authors & 432 \\
 Date range & 9 Aug 2023--16 Apr 2026 \\
 Median post length & 86 characters \\
 Replies & 96,278 (68.3\%) \\
 Original posts & 41,517 (29.4\%) \\
 Non-reply quote posts & 3,218 (2.3\%) \\
-Authors producing 50\% of posts & 22 \\
+Authors for 50\% of posts & 22 \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
-\subsection{Platform adoption and growth}
+\subsection{Community formation over time}
 
-Monthly post counts show one dominant structural break. In November 2024, Slovene post volume increased from 31 in October 2024 to 5,984 the following month, a 193-fold increase. Volume then stabilised at roughly 7,000--9,000 posts per month through most of 2025 and early 2026. Figure~\ref{fig:monthly-growth} shows the full monthly curve.
+Monthly metadata were used to distinguish raw post growth from the formation of a more stable author community. For each calendar month, the analysis counted total posts, active authors, first-seen authors, returning authors, cumulative authors, posts per active author, and simple one- and three-month first-seen author retention. All timestamps are treated as UTC. The final month, April 2026, is partial and is therefore excluded from retention windows, monthly period medians, and the statistical comparisons below.
 
-Author first-seen dates are likewise concentrated in late 2024: 172 authors have their first included post in November 2024 and 50 in December 2024. The corpus nevertheless contains low but non-zero pre-November 2024 activity, with 30 authors whose first included post falls between August 2023 and October 2024.
+One break stands out clearly in the monthly series. In November 2024, Slovene post volume increased from 31 in October 2024 to 5,984 the following month, while the number of active authors increased from 13 to 196. The number of first-seen authors rose from 8 in October to 172 in November. By the end of November 2024, the cumulative number of observed authors had reached 202, and by the end of December it had reached 252. Figure~\ref{fig:monthly-growth} shows the full monthly post curve.
+
+This break is visible not only in volume but also in participation. Through October 2024, the corpus contains 178 posts by 30 authors, with a median of 10 posts and 3 active authors per complete month. From November 2024 onward, the corpus contains 140,835 posts by 429 authors, with median complete-month values of 7,958 posts and 210 active authors. Median posts per active author also rises from 2.33 before the break to 37.73 after it, indicating that the change is not only an increase in the number of participating authors. Table~\ref{tab:community-periods} summarises the period comparison.
+
+\begin{table}[htbp]
+\caption{Community-formation metrics before and after the late-2024 surge. Monthly medians exclude the partial final month, April 2026.}
+\label{tab:community-periods}
+\centering
+\begin{tabularx}{\linewidth}{Xrr}
+\toprule
+Measure & Through Oct 2024 & Nov 2024 onward \\
+\midrule
+Total observed posts & 178 & 140,835 \\
+Total active authors & 30 & 429 \\
+Median monthly posts & 10 & 7,958 \\
+Median monthly active authors & 3 & 210 \\
+Median posts per active author & 2.33 & 37.73 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Retention by first-seen month points in the same direction: the late-2024 surge does not look like one-off activity alone. Of the 172 authors first seen in November 2024, 86.6\% posted again in December 2024 and 94.2\% posted at least once in the following three months. Of the 50 authors first seen in December 2024, 72.0\% posted again in January 2025 and 82.0\% posted at least once in the following three months. These figures do not show why authors became active, but they do suggest that most kept posting.
+
+The late-2024 break occurs well after Bluesky's public opening in February 2024 \parencite{bsky-public-2024}, suggesting that the removal of invite-only access was a necessary background condition for growth but not, by itself, sufficient to explain the much later Slovene surge. It also coincides with a wider post-election migration wave to Bluesky after the November 2024 U.S. presidential election \parencite{parvini2024bluesky-election}. These markers are treated as contextual reference points rather than causal explanations.
+
+As a simple robustness check, Mann--Whitney U tests were run on complete monthly observations before and after November 2024. The post-surge months were higher for monthly post counts, active-author counts, and posts per active author in all pairwise comparisons (Cliff's delta~=~1.00 in each case; two-sided \(p \approx 1.6 \times 10^{-6}\)). These tests are used descriptively rather than causally: they support the claim that the late-2024 shift is large and systematic in the observed corpus, but they do not establish its external cause.
 
 \begin{figure}[htbp]
 \centering
-\caption{Monthly count of Slovene posts in the final corpus, August 2023 to April 2026. The sharp increase in November 2024 (from 31 posts in October to 5{,}984 the following month) is the clearest structural break in the corpus. The April 2026 bar is partial, ending on 16 April.}
+\caption{Monthly count of Slovene posts in the final corpus, August 2023 to April 2026. The chart marks two external context points: Bluesky's public opening without invitations in February 2024 and the wider post-election Bluesky migration wave in November 2024. The April 2026 bar is partial, ending on 16 April.}
 \label{fig:monthly-growth}
+\definecolor{chartblue}{HTML}{486A8D}
+\definecolor{chartorange}{HTML}{C95F2D}
+\definecolor{chartgray}{HTML}{5F6670}
 \begin{tikzpicture}
 \begin{axis}[
   width=0.98\linewidth,
-  height=6.5cm,
+  height=6.2cm,
   ybar,
-  bar width=6pt,
+  bar width=5.6pt,
   xlabel={},
   ylabel={Posts per month},
   ylabel style={font=\small},
-  xtick={1,7,13,16,19,25,31},
-  xticklabels={{Aug 2023},{Feb 2024},{Aug 2024},{Nov 2024},{Feb 2025},{Aug 2025},{Feb 2026}},
-  x tick label style={rotate=40, anchor=east, font=\scriptsize},
+  xtick={1,7,13,16,19,25,31,33},
+  xticklabels={{Aug 2023},{Feb 2024},{Aug 2024},{Nov 2024},{Feb 2025},{Aug 2025},{Feb 2026},{Apr 2026}},
+  x tick label style={rotate=35, anchor=east, font=\scriptsize},
   y tick label style={font=\scriptsize},
   scaled y ticks=false,
   yticklabel={\pgfmathprintnumber[fixed,1000 sep={,}]{\tick}},
@@ -54,18 +84,27 @@ Author first-seen dates are likewise concentrated in late 2024: 172 authors have
   ymax=10500,
   ytick={0,2000,4000,6000,8000,10000},
   ymajorgrids=true,
-  grid style={dotted, gray!40},
+  grid style={solid, gray!18},
   axis x line=bottom,
   axis y line=left,
-  axis line style={-, gray!60},
-  tick style={gray!60},
+  axis line style={-, gray!45},
+  tick style={gray!45},
   enlarge x limits=0.03,
+  clip=false,
 ]
-\addplot[fill=teal!55, draw=teal!75, line width=0.3pt] coordinates {
-(1,34) (2,16) (3,7) (4,10) (5,15) (6,14) (7,22) (8,13) (9,1) (10,3) (11,3) (12,4) (13,4) (14,1) (15,31) (16,5984) (17,7515) (18,9091) (19,9569) (20,9177) (21,6880) (22,7255) (23,7166) (24,8140) (25,7508) (26,7835) (27,8858) (28,8627) (29,7958) (30,9480) (31,7752) (32,9100) (33,2940)
+\path[fill=chartorange!8, draw=none] (axis cs:15.5,0) rectangle (axis cs:16.5,10500);
+\draw[chartgray!65, densely dotted, line width=0.45pt] (axis cs:7,0) -- (axis cs:7,9600);
+\draw[chartgray!65, densely dotted, line width=0.45pt] (axis cs:16.15,0) -- (axis cs:16.15,9600);
+
+\addplot[fill=chartblue!82, draw=chartblue!82, line width=0pt] coordinates {
+(1,34) (2,16) (3,7) (4,10) (5,15) (6,14) (7,22) (8,13) (9,1) (10,3) (11,3) (12,4) (13,4) (14,1) (15,31) (17,7515) (18,9091) (19,9569) (20,9177) (21,6880) (22,7255) (23,7166) (24,8140) (25,7508) (26,7835) (27,8858) (28,8627) (29,7958) (30,9480) (31,7752) (32,9100)
 };
-\draw[dashed, orange!80!black, line width=0.6pt] (axis cs:15.5,0) -- (axis cs:15.5,10500);
-\node[font=\scriptsize, orange!70!black, anchor=south west] at (axis cs:15.7,9200) {Nov 2024};
+\addplot[fill=chartorange!90, draw=chartorange!90, line width=0pt] coordinates {(16,5984)};
+\addplot[fill=gray!45, draw=gray!45, line width=0pt] coordinates {(33,2940)};
+
+\node[font=\scriptsize, text=chartgray, rotate=90, anchor=south] at (axis cs:7.25,6700) {Bluesky opens};
+\node[font=\scriptsize, text=chartorange!85!black, align=left, anchor=west] at (axis cs:16.45,9100) {Nov 2024 surge\\U.S. election wave};
+\node[font=\scriptsize, text=gray!60, anchor=south east] at (axis cs:33.25,3350) {partial};
 \end{axis}
 \end{tikzpicture}
 \end{figure}
@@ -75,10 +114,15 @@ Author first-seen dates are likewise concentrated in late 2024: 172 authors have
 Posting activity follows a clear daily rhythm consistent with the Central European time zone. A morning peak occurs at 09:00--10:00~UTC and a stronger evening peak at 18:00--19:00~UTC, corresponding roughly to late morning and evening in Slovenia depending on daylight saving time. Activity is lowest between 01:00 and 04:00~UTC. This pattern is consistent with a community of primarily Slovenian-timezone users.
 
 \subsection{Interactional structure}
+\label{sec:interactional}
 
-Using a mutually exclusive hierarchy that counts reply-quote combinations as replies, the corpus is dominated by reply posts: more than two thirds of included posts are replies, while non-reply quote posts are rare (Table~\ref{tab:corpus-profile}). The median reply is 77 characters, compared to 114 characters for original posts. In this corpus, Slovene Bluesky use is therefore strongly conversational.
+Using a mutually exclusive hierarchy that counts reply-quote combinations as replies, the corpus is dominated by reply posts: 96,278 of 141,013 included posts (68.3\%) are replies, while 41,517 (29.4\%) are original posts and 3,218 (2.3\%) are non-reply quote posts. The median reply is 77 characters, compared to 114 characters for original posts. In this corpus, Slovene Bluesky use is therefore strongly conversational.
 
-The overall statistics mask a clear division between account types. A few broadcast accounts, including a sports news outlet, a paddleboarding account, and an environmental organisation, have reply rates of 0\%. Individual users, by contrast, often show reply rates exceeding 80--90\%. The inclusion of broadcast accounts inflates the original-post count; among individual users the community is even more strongly conversational.
+This pattern is not only a result of the late-2024 growth surge. Before November 2024, replies already accounted for 54.5\% of posts; from November 2024 onward, their share rises to 68.3\%. The post-surge influx of authors is therefore consistent with a continuation and strengthening of an interactional pattern that was already present, rather than the introduction of a fundamentally different one.
+
+The author-level distribution tells a similar story. Among the 246 authors with at least 20 posts in the final corpus, the median reply rate is 0.66 (IQR 0.38--0.84), and only 9 authors (3.7\%) have a reply rate of zero. At the same time, 74 authors (30.1\%) have reply rates above 0.8. This suggests that the dominance of replies is not only an aggregate artefact of corpus-level totals, but a feature that extends beyond a small number of highly active accounts. A simple robustness check leads to the same conclusion: the median monthly reply share is nearly identical in the full corpus and in the subset of authors with at least 20 posts (67.1\% vs.\ 67.3\%), indicating that the conversational character of the corpus is not driven mainly by marginal one-off accounts.
+
+A small broadcast-oriented minority is nevertheless visible. Using simple descriptive thresholds based on reply rate, 39 authors in the subset of authors with at least 20 posts fall into a broadcast-heavy group (reply rate below 0.2), 133 into a mixed group, and 74 into a strongly conversational group (reply rate above 0.8). These labels are only descriptive heuristics, not validated social categories, but they help illustrate the broad split already visible in the data: a limited number of accounts contribute mostly non-reply content, while a substantial share of active authors use the platform primarily for exchange and ongoing dialogue.
 
 Posts with emoji occur at a rate of 19.5\%, with at least one external URL in the post text at 12.6\%, hashtags at 4.9\%, and \mbox{@-mentions} at 1.2\%. The low hashtag rate is consistent with the conversational character of the corpus. Across the whole corpus, 11.2\% of posts embed a structured external link card, 8.0\% include images, 2.3\% are non-reply quote posts embedding another post, 0.5\% contain video, and 0.2\% combine a quote-post with attached media. Video is notably rare.
 
@@ -92,11 +136,15 @@ Handle choice is slightly more varied. Of the 432 authors, 395 (91.4\%) use a \t
 
 Together, these figures show that most corpus authors use the default Bluesky configuration, while a smaller minority changed either their public handle, their hosting provider, or both.
 
-\subsection{Topics: hashtags and linked domains}
+\subsection{Hashtag and linking practices}
 
-Hashtag use is sparse. The three most frequent hashtags --- \texttt{\#supslovenija} (230 posts), \texttt{\#supdeska} (187), and \texttt{\#aquamarina} (177) --- all relate to stand-up paddleboarding and appear to come mostly from a small number of accounts (notably \texttt{supdeska.bsky.social}, one of the broadcast accounts noted above). This is closer to repeated self-tagging by a dedicated few than to a visible community subgroup. Other frequent hashtags include \texttt{\#pohvalanadan}, \texttt{\#zelenjavajezakon}, \texttt{\#catsofbluesky}, \texttt{\#slovenija}, \texttt{\#kava}, and \texttt{\#dobrojutro}, reflecting a mix of daily ritual, current events, and platform culture.
+Hashtag use is sparse throughout the corpus. Only 6,879 of 141,013 posts (4.9\%) contain at least one hashtag, suggesting that broad hashtag coordination is not central to this corpus. The most frequent hashtags are often highly concentrated: among the 20 most frequent hashtags, 18 have a single author contributing more than half of all uses. Several of the top hashtags, including \texttt{\#supslovenija}, \texttt{\#supdeska}, and \texttt{\#aquamarina}, are used exclusively by a single account and therefore function more as repeated self-tagging than as markers of a wider community topic. At the same time, a small minority of hashtags shows more distributed authorship, such as \texttt{\#pohvalanadan} (91 occurrences, 28 authors) and \texttt{\#ema2025} (67 occurrences, 15 authors), suggesting that wider circulation does occur but is not the dominant pattern.
 
-The most linked external domain is \texttt{media.tenor.com} (2,613 posts), indicating frequent GIF sharing, followed by the news portal \texttt{n1info.si} (2,548), the Bluesky link-sharing tool \texttt{ebx.sh} (1,804), the Slovene tech news site \texttt{tehnozvezdje.si} (1,236), and YouTube/\texttt{youtu.be} (1,436 combined). The national public broadcaster \texttt{rtvslo.si} (702) also features prominently. GIF sharing as the single most common link type underscores the informal and conversational register of the corpus.
+External link sharing is more prevalent than hashtagging. A total of 17,838 posts (12.6\%) contain at least one external domain. The most frequently linked domain is \texttt{media.tenor.com} (2,613 occurrences across 121 authors), indicating that GIF-based informal exchange is a prominent and broadly shared interactional practice. Other highly visible domains are more concentrated: \texttt{ebx.sh}, a Bluesky-related link-sharing utility, appears 1,804 times but is used by only two authors, while \texttt{tehnozvezdje.si} is likewise concentrated in a small number of accounts. These domains point to two different practices: broadly shared informal exchange on the one hand, and repeated account-specific linking on the other.
+
+At the level of domain categories, linked content is shaped primarily by Slovene news media (35.8\% of domain occurrences), followed by GIF and media-sharing services (14.5\%), platform tooling and Bluesky utilities (11.2\%), and video platforms (8.0\%). The news category is distributed across several outlets rather than concentrated in a single source, pointing towards recurring current-affairs engagement. At the same time, the prominence of GIF sharing and Bluesky-native tools suggests a space shaped not only by information sharing, but also by informal exchange and platform-specific habits.
+
+Link-sharing also differs sharply by post type. External links occur in 32.2\% of original posts but in only 4.5\% of replies. This is consistent with the broader interactional pattern observed in Section~\ref{sec:interactional}: original posts are comparatively more likely to introduce or circulate content, while replies function primarily as conversational turns. Taken together, the hashtag and domain patterns suggest a small conversational public space oriented around informal exchange and recurring news-media engagement, rather than one organised primarily through hashtag-driven topic publics.
 
 \subsection{Linguistic profile and multilinguality}
 
