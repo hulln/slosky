@@ -1,3 +1,8 @@
+# Ignore all large output files (jsonl, sqlite, csv, meta.json) in outputs/
+outputs/**/*.jsonl
+outputs/**/*.sqlite
+outputs/**/*.csv
+outputs/**/*.meta.json
 .venv/
 .venv-annot/
 __pycache__/
@@ -31,3 +36,19 @@ paper/build/*
 # Local paper research material
 paper/references-pdfs/
 paper/local/
+
+# Corpus and output data (do not track large or sensitive data)
+outputs/final/final_sl_corpus.csv
+outputs/final/final_sl_corpus.jsonl
+outputs/final/final_sl_corpus.jsonl.meta.json
+outputs/analysis/
+outputs/community_formation/
+outputs/interaction_analysis/
+outputs/intermediate/
+outputs/legacy/
+outputs/private/
+outputs/release/
+outputs/running/
+outputs/samples/
+outputs/topic_analysis/
+outputs/validated/
