@@ -23,14 +23,17 @@ tmp/
 .claude/
 .codex/
 
+bfg-1.15.0.jar
+
 # Local build and editor artefacts
 *.synctex.gz
 *.run.xml
 *.Zone.Identifier
 *:Zone.Identifier
 
-# Paper compilation output
+# Paper compilation output (keep PDFs tracked)
 paper/build/*
+!paper/build/*.pdf
 !paper/build/.gitkeep
 
 # Local paper research material
@@ -39,3 +42,8 @@ paper/local/
 
 # Corpus and output data (do not track large or sensitive data)
 outputs/
+
+
+
+
+
