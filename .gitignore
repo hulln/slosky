@@ -1,3 +1,6 @@
+# Ignore local and reference folders in paper
+paper/local/
+paper/references-pdfs/
 # Ignore all large output files (jsonl, sqlite, csv, meta.json) in outputs/
 outputs/**/*.jsonl
 outputs/**/*.sqlite
@@ -37,7 +40,7 @@ paper/build/*
 !paper/build/.gitkeep
 
 # Local paper research material
-paper/references-pdfs/
+paper/local/references-pdfs/
 paper/local/
 
 # Corpus and output data (do not track large or sensitive data)
