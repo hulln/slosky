@@ -1,25 +1,29 @@
 # Paper Directory
 
-This folder is reserved for paper-related files. Actual content is gitignored and not tracked in the repository.
+This directory contains the JTDH manuscript sources and local paper material.
 
-- `xelatex`
-- `lualatex`
-- `latexmk`
-- `biber`
+Top level:
 
-So the manuscript can be edited here, but it cannot currently be compiled here.
+- `jtdh-manuscript-english.tex`: main non-anonymous entry file
+- `jtdh-manuscript-english-anonymous.tex`: anonymous entry file
+- `jtdh.sty`: active local style file used by the manuscript
 
-## Method claims to keep aligned
+Source folders:
 
-Keep the manuscript aligned with:
+- `sections/front/`: abstract and front matter inputs
+- `sections/body/`: main section inputs
+- `bibliography/`: bibliography source
+- `img/figures/`: paper figures
+- `img/assets/`: template assets such as ORCID, ROR, and licence graphics
+- `records/`: submission notes and records
 
-- `docs/methodology-section-draft.md`
-- `docs/validation-results.md`
-- `docs/quality-assurance.md`
-- `docs/detector-choice.md`
+Supporting files:
 
-Keep claims conservative:
+- `jtdh-template-*.tex`: reference template files
 
-- currently recoverable public posts
-- discovered Slovene-linked accounts
-- deleted posts excluded
+Local-only material:
+
+- `build/`: LaTeX build output, ignored by Git
+- `local/`: local reading copies and other non-source paper material, ignored by Git
+
+Compile with `latexmk` from this directory.

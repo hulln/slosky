@@ -1,0 +1,15 @@
+\section{Introduction}
+
+Bluesky and the wider ATProto ecosystem have become increasingly relevant as a source of public social-media data \parencite{failla2024bluesky,quelle2025bluesky}. For smaller languages such as Slovene, this opens up an opportunity to document an emerging online community on a new, decentralised platform, and to consider how such documentation should be done. The paper is also motivated by the author's long-standing interest in Slovene online communities, familiarity with the emerging Slovene Bluesky space, and a broader interest in what open-protocol social media makes visible and researchable.
+
+This paper describes an attempt to build a Slovene Bluesky corpus from public data. The main challenges are not only in collection, but in deciding what should count as a Slovene post. Language tags are useful but imperfect, and posts by Slovene-linked users are not automatically Slovene. The approach combines protocol-aware collection with explicit validation, but it still requires drawing a practical line around what counts as a Slovene post.
+
+Four questions guide the work:
+\begin{enumerate}[noitemsep,topsep=2pt,partopsep=0pt]
+  \item Can a usable Slovene Bluesky corpus be built from public ATProto data?
+  \item How far can collection move beyond a simple \texttt{langs=sl} strategy?
+  \item Which inclusion rules are reliable enough for a main corpus?
+  \item What basic properties are visible in the resulting corpus?
+\end{enumerate}
+
+This paper makes two contributions. First, it presents a protocol-native workflow for constructing a high-precision corpus of Slovene Bluesky posts from public ATProto data, combining tagged discovery, multi-PDS backfill, and validated post-level language filtering. Second, it uses the resulting corpus for an initial descriptive analysis of temporal, interactional, and linking patterns in Slovene-language Bluesky posting.

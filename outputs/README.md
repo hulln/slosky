@@ -2,6 +2,12 @@
 
 This folder is split by purpose.
 
+The key distinction is:
+
+- some outputs are stable research artefacts worth keeping;
+- some are temporary runtime state;
+- some are old exploratory material kept only for traceability.
+
 ## `outputs/final/`
 
 Current official paper dataset.
@@ -34,6 +40,23 @@ Files used by active or resumable background collectors.
 - seed-author live store
 - PDS cache
 
+Treat this directory as mutable runtime state, not as a clean release snapshot.
+
 ## `outputs/legacy/`
 
 Older pilot and experimental material kept for reference.
+
+## Practical reading guide
+
+If you are trying to understand the paper result first, start with:
+
+- `outputs/final/`
+- `outputs/validated/`
+- `outputs/community_formation/`
+- `outputs/interaction_analysis/`
+- `outputs/topic_analysis/`
+
+If you are trying to rerun or extend collection, inspect:
+
+- `outputs/running/`
+- `outputs/intermediate/`

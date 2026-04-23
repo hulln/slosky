@@ -27,7 +27,7 @@ Authors for 50\% of posts & 22 \\
 \end{tabularx}
 \end{table}
 
-\subsection{Community formation over time}
+\subsection{Growth and participation over time}
 
 Monthly metadata were used to distinguish raw post growth from the formation of a more stable author community. For each calendar month, the analysis counted total posts, active authors, first-seen authors, returning authors, cumulative authors, posts per active author, and simple one- and three-month first-seen author retention. All timestamps are treated as UTC. The final month, April 2026, is partial and is therefore excluded from retention windows, monthly period medians, and the statistical comparisons below.
 
@@ -36,7 +36,7 @@ One break stands out clearly in the monthly series. In November 2024, Slovene po
 This break is visible not only in volume but also in participation. Through October 2024, the corpus contains 178 posts by 30 authors, with a median of 10 posts and 3 active authors per complete month. From November 2024 onward, the corpus contains 140,835 posts by 429 authors, with median complete-month values of 7,958 posts and 210 active authors. Median posts per active author also rises from 2.33 before the break to 37.73 after it, indicating that the change is not only an increase in the number of participating authors. Table~\ref{tab:community-periods} summarises the period comparison.
 
 \begin{table}[htbp]
-\caption{Community-formation metrics before and after the late-2024 surge. Monthly medians exclude the partial final month, April 2026.}
+\caption{Growth and participation metrics before and after the late-2024 surge. Monthly medians exclude the partial final month, April 2026.}
 \label{tab:community-periods}
 \centering
 \begin{tabularx}{\linewidth}{Xrr}
@@ -52,20 +52,22 @@ Median posts per active author & 2.33 & 37.73 \\
 \end{tabularx}
 \end{table}
 
-Retention by first-seen month points in the same direction: the late-2024 surge does not look like one-off activity alone. Of the 172 authors first seen in November 2024, 86.6\% posted again in December 2024 and 94.2\% posted at least once in the following three months. Of the 50 authors first seen in December 2024, 72.0\% posted again in January 2025 and 82.0\% posted at least once in the following three months. These figures do not show why authors became active, but they do suggest that most kept posting.
+Retention by first-seen month points in the same direction: the late-2024 surge does not appear to consist of one-off activity alone. Of the 172 authors first observed in November 2024, 86.6\% posted again in December 2024 and 94.2\% posted at least once in the following three months. Of the 50 authors first seen in December 2024, 72.0\% posted again in January 2025 and 82.0\% posted at least once in the following three months. While these figures do not explain why authors became active, they do suggest that most continued to participate beyond their first appearance.
 
-The late-2024 break occurs well after Bluesky's public opening in February 2024 \parencite{bsky-public-2024}, suggesting that the removal of invite-only access was a necessary background condition for growth but not, by itself, sufficient to explain the much later Slovene surge. It also coincides with a wider post-election migration wave to Bluesky after the November 2024 U.S. presidential election \parencite{parvini2024bluesky-election}. These markers are treated as contextual reference points rather than causal explanations.
+The late-2024 break also occurs well after Bluesky's public opening in February 2024 \parencite{bsky-public-2024}, indicating that the removal of invite-only access was a necessary background condition for growth but not, by itself, sufficient to explain the much later Slovene surge. The timing furthermore coincides with a wider post-election migration wave to Bluesky following the November 2024 U.S. presidential election \parencite{parvini2024bluesky-election}. These events are treated here as contextual reference points rather than causal explanations.
 
-As a simple robustness check, Mann--Whitney U tests were run on complete monthly observations before and after November 2024. The post-surge months were higher for monthly post counts, active-author counts, and posts per active author in all pairwise comparisons (Cliff's delta~=~1.00 in each case; two-sided \(p \approx 1.6 \times 10^{-6}\)). These tests are used descriptively rather than causally: they support the claim that the late-2024 shift is large and systematic in the observed corpus, but they do not establish its external cause.
+Taken together, the observed changes represent a large and systematic shift across monthly post counts, numbers of active authors, and posts per active author.\footnote{Mann--Whitney U tests on complete pre- and post-November 2024 months confirm this pattern statistically, with Cliff's delta~=~1.00 and two-sided \(p \approx 1.6 \times 10^{-6}\) in each case, used descriptively rather than causally.}
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=\linewidth]{figure-posts-per-month}
-\caption{Monthly count of Slovene posts in the final corpus (bars, left axis) and active authors per month (line, right axis), August 2023 to April 2026. Dashed lines mark two contextual reference points: Bluesky's public opening without invitations on 6 February 2024 and the wider post-election migration wave in November 2024. Dotted lines mark the EU Parliament elections (9 June 2024) and the Slovenian parliamentary elections (22 March 2026). The April 2026 bar is partial, ending on 16 April.}
+\caption{Monthly Slovene post counts (bars, left axis) and active authors (line, right axis), August 2023--April 2026. Dashed lines: Bluesky's public opening (6 Feb 2024) and the post-election migration wave (Nov 2024). Dotted lines: EU Parliament elections (9 Jun 2024) and Slovenian parliamentary elections (22 Mar 2026). April 2026 bar is partial (ends 16 April).}
 \label{fig:monthly-growth}
+\includegraphics[width=\linewidth]{figure-posts-per-month}
 \end{figure}
 
 \subsection{Temporal patterns}
+
+Beyond growth and participation, temporal regularities in posting activity offer another perspective on how this community uses the platform.
 
 Posting activity follows a clear daily rhythm consistent with the Central European time zone. A morning peak occurs at 09:00--10:00~UTC and a stronger evening peak at 18:00--19:00~UTC, corresponding roughly to late morning and evening in Slovenia depending on daylight saving time. Activity is lowest between 01:00 and 04:00~UTC. This pattern is consistent with a community of primarily Slovenian-timezone users.
 
@@ -104,6 +106,6 @@ Link-sharing also differs sharply by post type. External links occur in 32.2\% o
 
 \subsection{Linguistic profile and multilinguality}
 
-A notable feature of the corpus is the frequency of mixed language tagging. Of the 141,013 posts, 58,416 (41.4\%) were tagged with both \texttt{sl} and \texttt{en} language codes. By contrast, langid detected a non-Slovene primary language in only 7.3\% of posts. The predominant non-Slovene labels assigned by langid were Croatian (\textit{hr}: 4,506 posts) and Bosnian (\textit{bs}: 2,285 posts)---closely related South Slavic languages for which cross-label confusion by automatic detectors is common. langid assigned English to only 278 posts.
+A notable feature of the corpus is the frequency of mixed language tagging. Of the 141,013 posts, 58,416 (41.4\%) were tagged with both \texttt{sl} and \texttt{en} language codes. By contrast, langid detected a non-Slovene primary language in only 7.3\% of posts. The predominant non-Slovene labels assigned by langid were Croatian (\textit{hr}: 4,506 posts) and Bosnian (\textit{bs}: 2,285 posts); closely related South Slavic languages for which cross-label confusion by automatic detectors is common. langid assigned English to only 278 posts.
 
 The high rate of \texttt{sl+en} tagging without corresponding English detection by langid suggests that mixed language metadata often reflects client-side tagging behaviour rather than sustained English-dominant content. The corpus nevertheless contains English lexical insertions within otherwise Slovene posts, which are retained as authentic examples of mixed-register writing.

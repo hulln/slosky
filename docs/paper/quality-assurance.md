@@ -31,7 +31,7 @@ This means the final corpus does not currently contain the blank, emoji-only, or
 
 Manual validation is documented in:
 
-- [validation-results.md](/home/nives/Projekti/slosky/docs/validation-results.md)
+- [validation-results.md](/home/nives/Projekti/slosky/docs/paper/validation-results.md)
 
 Current validation basis:
 

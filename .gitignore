@@ -3,12 +3,31 @@
 __pycache__/
 .pytest_cache/
 .mypy_cache/
+*.egg-info/
 dist/
 cache/
 models/
 tmp/
 *.pyc
+*.pyo
+*.swp
+*.swo
+.DS_Store
 
 .vscode/
 .claude/
 .codex/
+
+# Local build and editor artefacts
+*.synctex.gz
+*.run.xml
+*.Zone.Identifier
+*:Zone.Identifier
+
+# Paper compilation output
+paper/build/*
+!paper/build/.gitkeep
+
+# Local paper research material
+paper/references-pdfs/
+paper/local/

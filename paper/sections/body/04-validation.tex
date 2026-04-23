@@ -1,0 +1,18 @@
+\section{Validation}
+\label{sec:validation}
+
+\subsection{Precision validation}
+
+Validation was carried out through manual annotation of sampled posts. The strict core was evaluated using a random sample of 300 posts drawn uniformly from the \texttt{core\_tag\_supported} group. All 300 sampled posts were judged acceptable as Slovene, yielding an estimated precision of 100\% on the core layer.
+
+The broader review layer was evaluated with a separate random sample of 300 posts to determine which decision groups were clean enough to include. A breakdown by decision group showed that noise was concentrated in the tag-only and short-tagged subgroups. Within this 300-post sample, every row drawn from the three model-supported groups listed in Table~\ref{tab:decision-groups} was judged acceptable. The overall sample-level acceptability rate of 72\% (214 \texttt{Slovene-dominant}, 2 \texttt{Mixed-with-Slovene}, 40 \texttt{Not-Slovene}, 44 \texttt{Undeterminable/too-short}) is driven by the two noisier groups and therefore does not reflect the quality of the three model-supported groups that were ultimately included in the corpus.
+
+Additional dedicated follow-up checks on the two smaller model-supported groups confirmed this: in the \texttt{review\_langid\_only} sample of 50 posts, 49 were labelled \texttt{Slovene-dominant} and 1 \texttt{Mixed-with-Slovene}; in the \texttt{review\_langdetect\_only} sample of 50 posts, 49 were labelled \texttt{Slovene-dominant} and 1 \texttt{Not-Slovene}.
+
+These results support a final corpus that includes the strict core and all three model-supported review groups, while excluding the tag-only and short-tagged material whose noise the validation confirmed.
+
+\subsection{False-negative estimation}
+
+Precision validation confirms that posts included in the corpus are Slovene. A separate analysis estimated the false-negative rate, i.e.\ the fraction of Slovene posts from known authors that were excluded by the pipeline. A random sample of 200 posts from seed authors that (a) were not included in the final corpus, (b) carried no Slovene language tag, and (c) met the project's minimum-text rule of 20 alphabetic characters after URL and @-mention stripping was manually annotated. Of these, 17 posts (8.5\%) were judged to be Slovene-dominant or Mixed-with-Slovene.
+
+A rough extrapolation to the full pool of 97,968 excluded untagged posts from known authors that met the same minimum-text rule suggests that roughly 8,300 Slovene posts from the same author set were not captured by the current validated rule. This corresponds to approximately 5.9\% of the size of the final corpus. The corpus should therefore be described as a high-precision collection of Slovene posts from discovered Slovene-linked authors under the current rule, not as a complete census of all Slovene writing on Bluesky.

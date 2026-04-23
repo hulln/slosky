@@ -44,15 +44,15 @@ Validation samples currently available:
 
 Current validation summary:
 
-- [validation-results.md](/home/nives/Projekti/slosky/docs/validation-results.md)
-- QA summary: [quality-assurance.md](/home/nives/Projekti/slosky/docs/quality-assurance.md)
+- [validation-results.md](/home/nives/Projekti/slosky/docs/paper/validation-results.md)
+- QA summary: [quality-assurance.md](/home/nives/Projekti/slosky/docs/paper/quality-assurance.md)
 - machine-readable QA audit: [final_corpus_audit.json](/home/nives/Projekti/slosky/outputs/validated/final_corpus_audit.json)
-- detector comparison: [detector-choice.md](/home/nives/Projekti/slosky/docs/detector-choice.md)
+- detector comparison: [detector-choice.md](/home/nives/Projekti/slosky/docs/paper/detector-choice.md)
 - strict core sample manually checked: `300 / 300` acceptable as Slovene
 - strict review sample manually checked: review set is too noisy to merge wholesale
 - current corpus decision: [methodology-decision.md](/home/nives/Projekti/slosky/docs/methodology-decision.md)
-- paper-style methodology wording: [methodology-section-draft.md](/home/nives/Projekti/slosky/docs/methodology-section-draft.md)
-- chronological documentation: [process-log.md](/home/nives/Projekti/slosky/docs/process-log.md)
+- paper-style methodology wording: [methodology-section-draft.md](/home/nives/Projekti/slosky/docs/paper/methodology-section-draft.md)
+- chronological documentation: [process-log.md](/home/nives/Projekti/slosky/docs/archive/process-log.md)
 
 Current official corpus for the paper:
 

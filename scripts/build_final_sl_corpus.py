@@ -91,7 +91,9 @@ def main() -> int:
     writer = None
 
     written = 0
+    duplicates_skipped = 0
     decision_counts: dict[str, int] = {}
+    seen_uris: set[str] = set()
 
     with args.output_jsonl.open("w", encoding="utf-8") as jsonl_handle:
         if args.output_csv:
@@ -104,6 +106,13 @@ def main() -> int:
                 decision = row.get("decision", "")
                 if decision not in included_decisions:
                     continue
+                uri = str(row.get("uri") or "")
+                if not uri:
+                    continue
+                if uri in seen_uris:
+                    duplicates_skipped += 1
+                    continue
+                seen_uris.add(uri)
                 write_jsonl(jsonl_handle, row)
                 if writer is not None:
                     write_csv(writer, row)
@@ -114,6 +123,13 @@ def main() -> int:
                 decision = row.get("decision", "")
                 if decision not in included_decisions:
                     continue
+                uri = str(row.get("uri") or "")
+                if not uri:
+                    continue
+                if uri in seen_uris:
+                    duplicates_skipped += 1
+                    continue
+                seen_uris.add(uri)
                 write_jsonl(jsonl_handle, row)
                 if writer is not None:
                     write_csv(writer, row)
@@ -125,6 +141,7 @@ def main() -> int:
 
     summary = {
         "final_posts": written,
+        "duplicates_skipped": duplicates_skipped,
         "included_decisions": sorted(included_decisions),
         "decision_counts": decision_counts,
         "source_core_jsonl": str(args.core_jsonl),
