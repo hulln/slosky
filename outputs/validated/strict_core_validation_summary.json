@@ -1,0 +1,11 @@
+{
+  "total_rows": 300,
+  "label_counts": {
+    "Slovene-dominant": 300
+  },
+  "acceptable_rows": 300,
+  "acceptable_rate_total": 1.0,
+  "undeterminable_rows": 0,
+  "non_undeterminable_rows": 300,
+  "acceptable_rate_non_undeterminable": 1.0
+}

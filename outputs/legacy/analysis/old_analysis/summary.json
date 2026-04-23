@@ -1,0 +1,20 @@
+{
+  "structural_profile": {
+    "total_posts": 60044,
+    "median_length_chars": 50.0,
+    "reply_posts": 41493,
+    "quote_posts": 1860,
+    "original_non_reply_posts": 18551,
+    "percent_with_mentions": 1.25,
+    "percent_with_links": 14.63,
+    "percent_with_hashtags": 6.94,
+    "percent_with_emoji": 24.92
+  },
+  "multilinguality_profile": {
+    "single_language_sl_posts": 56883,
+    "mixed_language_or_variant_posts": 3161,
+    "empty_langs_posts": 0,
+    "percent_single_language_sl": 94.74,
+    "percent_mixed_language_or_variant": 5.26
+  }
+}

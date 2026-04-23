@@ -3,27 +3,12 @@
 __pycache__/
 .pytest_cache/
 .mypy_cache/
-build/
 dist/
 cache/
 models/
-outputs/
 tmp/
 *.pyc
 
 .vscode/
 .claude/
 .codex/
-
-paper/build/
-paper/*.aux
-paper/*.bbl
-paper/*.bcf
-paper/*.blg
-paper/*.fdb_latexmk
-paper/*.fls
-paper/*.log
-paper/*.out
-paper/*.run.xml
-paper/*.synctex.gz
-paper/*.pdf

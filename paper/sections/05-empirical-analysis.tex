@@ -60,53 +60,9 @@ As a simple robustness check, Mann--Whitney U tests were run on complete monthly
 
 \begin{figure}[htbp]
 \centering
-\caption{Monthly count of Slovene posts in the final corpus, August 2023 to April 2026. The chart marks two external context points: Bluesky's public opening without invitations in February 2024 and the wider post-election Bluesky migration wave in November 2024. The April 2026 bar is partial, ending on 16 April.}
+\includegraphics[width=\linewidth]{figure-posts-per-month}
+\caption{Monthly count of Slovene posts in the final corpus (bars, left axis) and active authors per month (line, right axis), August 2023 to April 2026. Dashed lines mark two contextual reference points: Bluesky's public opening without invitations on 6 February 2024 and the wider post-election migration wave in November 2024. Dotted lines mark the EU Parliament elections (9 June 2024) and the Slovenian parliamentary elections (22 March 2026). The April 2026 bar is partial, ending on 16 April.}
 \label{fig:monthly-growth}
-\definecolor{chartblue}{HTML}{486A8D}
-\definecolor{chartorange}{HTML}{C95F2D}
-\definecolor{chartgray}{HTML}{5F6670}
-\begin{tikzpicture}
-\begin{axis}[
-  width=0.98\linewidth,
-  height=6.2cm,
-  ybar,
-  bar width=5.6pt,
-  xlabel={},
-  ylabel={Posts per month},
-  ylabel style={font=\small},
-  xtick={1,7,13,16,19,25,31,33},
-  xticklabels={{Aug 2023},{Feb 2024},{Aug 2024},{Nov 2024},{Feb 2025},{Aug 2025},{Feb 2026},{Apr 2026}},
-  x tick label style={rotate=35, anchor=east, font=\scriptsize},
-  y tick label style={font=\scriptsize},
-  scaled y ticks=false,
-  yticklabel={\pgfmathprintnumber[fixed,1000 sep={,}]{\tick}},
-  ymin=0,
-  ymax=10500,
-  ytick={0,2000,4000,6000,8000,10000},
-  ymajorgrids=true,
-  grid style={solid, gray!18},
-  axis x line=bottom,
-  axis y line=left,
-  axis line style={-, gray!45},
-  tick style={gray!45},
-  enlarge x limits=0.03,
-  clip=false,
-]
-\path[fill=chartorange!8, draw=none] (axis cs:15.5,0) rectangle (axis cs:16.5,10500);
-\draw[chartgray!65, densely dotted, line width=0.45pt] (axis cs:7,0) -- (axis cs:7,9600);
-\draw[chartgray!65, densely dotted, line width=0.45pt] (axis cs:16.15,0) -- (axis cs:16.15,9600);
-
-\addplot[fill=chartblue!82, draw=chartblue!82, line width=0pt] coordinates {
-(1,34) (2,16) (3,7) (4,10) (5,15) (6,14) (7,22) (8,13) (9,1) (10,3) (11,3) (12,4) (13,4) (14,1) (15,31) (17,7515) (18,9091) (19,9569) (20,9177) (21,6880) (22,7255) (23,7166) (24,8140) (25,7508) (26,7835) (27,8858) (28,8627) (29,7958) (30,9480) (31,7752) (32,9100)
-};
-\addplot[fill=chartorange!90, draw=chartorange!90, line width=0pt] coordinates {(16,5984)};
-\addplot[fill=gray!45, draw=gray!45, line width=0pt] coordinates {(33,2940)};
-
-\node[font=\scriptsize, text=chartgray, rotate=90, anchor=south] at (axis cs:7.25,6700) {Bluesky opens};
-\node[font=\scriptsize, text=chartorange!85!black, align=left, anchor=west] at (axis cs:16.45,9100) {Nov 2024 surge\\U.S. election wave};
-\node[font=\scriptsize, text=gray!60, anchor=south east] at (axis cs:33.25,3350) {partial};
-\end{axis}
-\end{tikzpicture}
 \end{figure}
 
 \subsection{Temporal patterns}

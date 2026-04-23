@@ -1,0 +1,1768 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/global//global/global}
+    \entry{ayers2018dont}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=54c6ead440d10eb064f57f960c9e77ed}{%
+           family={Ayers},
+           familyi={A\bibinitperiod},
+           given={John\bibnamedelima W.},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=447bd2a79bcf6a971f9fde8b04ca4861}{%
+           family={Caputi},
+           familyi={C\bibinitperiod},
+           given={Theodore\bibnamedelima L.},
+           giveni={T\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=67b1e4c74f3479ed2f4d7139b92ff7b0}{%
+           family={Nebeker},
+           familyi={N\bibinitperiod},
+           given={Camille},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fad798cd3972b70e217b653e07abc99d}{%
+           family={Dredze},
+           familyi={D\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a798ea56267eaf1850e98fbaac79689f}
+      \strng{fullhash}{f86251023e14c989637b176a8750cd56}
+      \strng{bibnamehash}{f86251023e14c989637b176a8750cd56}
+      \strng{authorbibnamehash}{f86251023e14c989637b176a8750cd56}
+      \strng{authornamehash}{a798ea56267eaf1850e98fbaac79689f}
+      \strng{authorfullhash}{f86251023e14c989637b176a8750cd56}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{NPJ Digital Medicine}
+      \field{number}{1}
+      \field{title}{Don't quote me: reverse identification of research participants in social media studies}
+      \field{volume}{1}
+      \field{year}{2018}
+      \field{pages}{30}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/s41746-018-0036-2
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1038/s41746-018-0036-2
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1038/s41746-018-0036-2
+      \endverb
+    \endentry
+    \entry{balduf2025starterpacks}{article}{}
+      \name{author}{9}{}{%
+        {{un=0,uniquepart=base,hash=4c7e4abd683ba1d23ee854c1b3bd0bbd}{%
+           family={Balduf},
+           familyi={B\bibinitperiod},
+           given={Leonhard},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=881fc172aa491f4695285a96efce0fb7}{%
+           family={Sokoto},
+           familyi={S\bibinitperiod},
+           given={Saidu},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8532d9be6c124f254353927432e2d846}{%
+           family={Baronchelli},
+           familyi={B\bibinitperiod},
+           given={Andrea},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e38151b7a3dc7193a143c6ad630f3c6e}{%
+           family={Castro},
+           familyi={C\bibinitperiod},
+           given={Ignacio},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=63f2d964f1d83f183e1c95639e2d57bd}{%
+           family={Król},
+           familyi={K\bibinitperiod},
+           given={Michał},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1a658b812e3374b348ad6585d05af4d6}{%
+           family={Tyson},
+           familyi={T\bibinitperiod},
+           given={Gareth},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b7519ecffc3515171388e1945793c232}{%
+           family={Pavlou},
+           familyi={P\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=736dbf64825ef9bfb5625659639742ed}{%
+           family={Scheuermann},
+           familyi={S\bibinitperiod},
+           given={Bjorn},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0d9e444878630d92639899e342a98bb6}{%
+           family={Ascigil},
+           familyi={A\bibinitperiod},
+           given={Onur},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Copenhagen, Denmark}%
+      }
+      \list{publisher}{1}{%
+        {AAAI Press}%
+      }
+      \strng{namehash}{dd24e538bbd188ad5310b7840f6c591b}
+      \strng{fullhash}{33a8657ac3c1b6191faa3b66c56ecd56}
+      \strng{bibnamehash}{33a8657ac3c1b6191faa3b66c56ecd56}
+      \strng{authorbibnamehash}{33a8657ac3c1b6191faa3b66c56ecd56}
+      \strng{authornamehash}{dd24e538bbd188ad5310b7840f6c591b}
+      \strng{authorfullhash}{33a8657ac3c1b6191faa3b66c56ecd56}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the Nineteenth International {AAAI} Conference on Web and Social Media}
+      \field{title}{Bootstrapping Social Networks: Lessons from {Bluesky} Starter Packs}
+      \field{volume}{19}
+      \field{year}{2025}
+      \field{pages}{178\bibrangedash 192}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1609/icwsm.v19i1.35810
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1609/icwsm.v19i1.35810
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1609/icwsm.v19i1.35810
+      \endverb
+    \endentry
+    \entry{bsky-listreposbycollection}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=96fb01f175870273ebf7d18ee355abd1}{%
+           family={{Bluesky PBC}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{96fb01f175870273ebf7d18ee355abd1}
+      \strng{fullhash}{96fb01f175870273ebf7d18ee355abd1}
+      \strng{bibnamehash}{96fb01f175870273ebf7d18ee355abd1}
+      \strng{authorbibnamehash}{96fb01f175870273ebf7d18ee355abd1}
+      \strng{authornamehash}{96fb01f175870273ebf7d18ee355abd1}
+      \strng{authorfullhash}{96fb01f175870273ebf7d18ee355abd1}
+      \field{extraname}{1}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradate}{1}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{\texttt{com.atproto.sync.listReposByCollection}}
+      \field{urlday}{21}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.bsky.app/docs/api/com-atproto-sync-list-repos-by-collection
+      \endverb
+      \verb{url}
+      \verb https://docs.bsky.app/docs/api/com-atproto-sync-list-repos-by-collection
+      \endverb
+    \endentry
+    \entry{bsky-posts}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=96fb01f175870273ebf7d18ee355abd1}{%
+           family={{Bluesky PBC}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{96fb01f175870273ebf7d18ee355abd1}
+      \strng{fullhash}{96fb01f175870273ebf7d18ee355abd1}
+      \strng{bibnamehash}{96fb01f175870273ebf7d18ee355abd1}
+      \strng{authorbibnamehash}{96fb01f175870273ebf7d18ee355abd1}
+      \strng{authornamehash}{96fb01f175870273ebf7d18ee355abd1}
+      \strng{authorfullhash}{96fb01f175870273ebf7d18ee355abd1}
+      \field{extraname}{2}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradate}{2}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Posts}
+      \field{urlday}{21}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.bsky.app/docs/advanced-guides/posts
+      \endverb
+      \verb{url}
+      \verb https://docs.bsky.app/docs/advanced-guides/posts
+      \endverb
+    \endentry
+    \entry{bsky-ratelimits}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=96fb01f175870273ebf7d18ee355abd1}{%
+           family={{Bluesky PBC}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{96fb01f175870273ebf7d18ee355abd1}
+      \strng{fullhash}{96fb01f175870273ebf7d18ee355abd1}
+      \strng{bibnamehash}{96fb01f175870273ebf7d18ee355abd1}
+      \strng{authorbibnamehash}{96fb01f175870273ebf7d18ee355abd1}
+      \strng{authornamehash}{96fb01f175870273ebf7d18ee355abd1}
+      \strng{authorfullhash}{96fb01f175870273ebf7d18ee355abd1}
+      \field{extraname}{3}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradate}{3}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Rate Limits}
+      \field{urlday}{21}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.bsky.app/docs/advanced-guides/rate-limits
+      \endverb
+      \verb{url}
+      \verb https://docs.bsky.app/docs/advanced-guides/rate-limits
+      \endverb
+    \endentry
+    \entry{atproto-repository}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b12c5c25322e9d762c4c374aa201b14d}{%
+           family={{Bluesky Social PBC}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{b12c5c25322e9d762c4c374aa201b14d}
+      \strng{fullhash}{b12c5c25322e9d762c4c374aa201b14d}
+      \strng{bibnamehash}{b12c5c25322e9d762c4c374aa201b14d}
+      \strng{authorbibnamehash}{b12c5c25322e9d762c4c374aa201b14d}
+      \strng{authornamehash}{b12c5c25322e9d762c4c374aa201b14d}
+      \strng{authorfullhash}{b12c5c25322e9d762c4c374aa201b14d}
+      \field{extraname}{1}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradate}{1}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Repository}
+      \field{urlday}{21}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://atproto.com/specs/repository
+      \endverb
+      \verb{url}
+      \verb https://atproto.com/specs/repository
+      \endverb
+    \endentry
+    \entry{atproto-streaming}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b12c5c25322e9d762c4c374aa201b14d}{%
+           family={{Bluesky Social PBC}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{b12c5c25322e9d762c4c374aa201b14d}
+      \strng{fullhash}{b12c5c25322e9d762c4c374aa201b14d}
+      \strng{bibnamehash}{b12c5c25322e9d762c4c374aa201b14d}
+      \strng{authorbibnamehash}{b12c5c25322e9d762c4c374aa201b14d}
+      \strng{authornamehash}{b12c5c25322e9d762c4c374aa201b14d}
+      \strng{authorfullhash}{b12c5c25322e9d762c4c374aa201b14d}
+      \field{extraname}{2}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradate}{2}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Streaming Data}
+      \field{urlday}{21}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://atproto.com/guides/streaming-data
+      \endverb
+      \verb{url}
+      \verb https://atproto.com/guides/streaming-data
+      \endverb
+    \endentry
+    \entry{atproto-sync}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b12c5c25322e9d762c4c374aa201b14d}{%
+           family={{Bluesky Social PBC}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{b12c5c25322e9d762c4c374aa201b14d}
+      \strng{fullhash}{b12c5c25322e9d762c4c374aa201b14d}
+      \strng{bibnamehash}{b12c5c25322e9d762c4c374aa201b14d}
+      \strng{authorbibnamehash}{b12c5c25322e9d762c4c374aa201b14d}
+      \strng{authornamehash}{b12c5c25322e9d762c4c374aa201b14d}
+      \strng{authorfullhash}{b12c5c25322e9d762c4c374aa201b14d}
+      \field{extraname}{3}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradate}{3}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Sync}
+      \field{urlday}{21}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://atproto.com/specs/sync
+      \endverb
+      \verb{url}
+      \verb https://atproto.com/specs/sync
+      \endverb
+    \endentry
+    \entry{atproto-spec}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b12c5c25322e9d762c4c374aa201b14d}{%
+           family={{Bluesky Social PBC}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{b12c5c25322e9d762c4c374aa201b14d}
+      \strng{fullhash}{b12c5c25322e9d762c4c374aa201b14d}
+      \strng{bibnamehash}{b12c5c25322e9d762c4c374aa201b14d}
+      \strng{authorbibnamehash}{b12c5c25322e9d762c4c374aa201b14d}
+      \strng{authornamehash}{b12c5c25322e9d762c4c374aa201b14d}
+      \strng{authorfullhash}{b12c5c25322e9d762c4c374aa201b14d}
+      \field{extraname}{4}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Technical specification}
+      \field{title}{The {AT} Protocol}
+      \field{urlday}{1}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://atproto.com/guides/overview
+      \endverb
+      \verb{url}
+      \verb https://atproto.com/guides/overview
+      \endverb
+    \endentry
+    \entry{bsky-beta-2023}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b12c5c25322e9d762c4c374aa201b14d}{%
+           family={{Bluesky Social PBC}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{b12c5c25322e9d762c4c374aa201b14d}
+      \strng{fullhash}{b12c5c25322e9d762c4c374aa201b14d}
+      \strng{bibnamehash}{b12c5c25322e9d762c4c374aa201b14d}
+      \strng{authorbibnamehash}{b12c5c25322e9d762c4c374aa201b14d}
+      \strng{authornamehash}{b12c5c25322e9d762c4c374aa201b14d}
+      \strng{authorfullhash}{b12c5c25322e9d762c4c374aa201b14d}
+      \field{extraname}{5}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{3}
+      \field{title}{Bluesky Private Beta Update}
+      \field{urlday}{22}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://bsky.social/about/blog/3-2-2023-bluesky-beta-app
+      \endverb
+      \verb{url}
+      \verb https://bsky.social/about/blog/3-2-2023-bluesky-beta-app
+      \endverb
+    \endentry
+    \entry{bsky-beta-roadmap-2023}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b12c5c25322e9d762c4c374aa201b14d}{%
+           family={{Bluesky Social PBC}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{b12c5c25322e9d762c4c374aa201b14d}
+      \strng{fullhash}{b12c5c25322e9d762c4c374aa201b14d}
+      \strng{bibnamehash}{b12c5c25322e9d762c4c374aa201b14d}
+      \strng{authorbibnamehash}{b12c5c25322e9d762c4c374aa201b14d}
+      \strng{authornamehash}{b12c5c25322e9d762c4c374aa201b14d}
+      \strng{authorfullhash}{b12c5c25322e9d762c4c374aa201b14d}
+      \field{extraname}{6}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradate}{3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{6}
+      \field{title}{Private Beta Update \& Roadmap}
+      \field{urlday}{22}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://bsky.social/about/blog/6-02-2023-beta-update
+      \endverb
+      \verb{url}
+      \verb https://bsky.social/about/blog/6-02-2023-beta-update
+      \endverb
+    \endentry
+    \entry{bsky-public-2024}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b12c5c25322e9d762c4c374aa201b14d}{%
+           family={{Bluesky Social PBC}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{b12c5c25322e9d762c4c374aa201b14d}
+      \strng{fullhash}{b12c5c25322e9d762c4c374aa201b14d}
+      \strng{bibnamehash}{b12c5c25322e9d762c4c374aa201b14d}
+      \strng{authorbibnamehash}{b12c5c25322e9d762c4c374aa201b14d}
+      \strng{authornamehash}{b12c5c25322e9d762c4c374aa201b14d}
+      \strng{authorfullhash}{b12c5c25322e9d762c4c374aa201b14d}
+      \field{extraname}{7}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{2}
+      \field{title}{Join {Bluesky} Today (Bye, Invites!)}
+      \field{urlday}{22}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://bsky.social/about/blog/02-06-2024-join-bluesky
+      \endverb
+      \verb{url}
+      \verb https://bsky.social/about/blog/02-06-2024-join-bluesky
+      \endverb
+    \endentry
+    \entry{erjavec2019janes}{article}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=f7a9d2dfe8a09473429c59a7ca5107fa}{%
+           family={Erjavec},
+           familyi={E\bibinitperiod},
+           given={Tomaž},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=641bada79a79cd709cd2071ab9318c36}{%
+           family={Fišer},
+           familyi={F\bibinitperiod},
+           given={Darja},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6190c232003568a24c2a2b4a1dff1d38}{%
+           family={Čibej},
+           familyi={Č\bibinitperiod},
+           given={Jaka},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=deb5ae64f2721ebbcaa6fea3b54cc432}{%
+           family={Arhar\bibnamedelima Holdt},
+           familyi={A\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={Špela},
+           giveni={Š\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=24de4e3994b979e459a4b6c29c7ae830}{%
+           family={Ljubešić},
+           familyi={L\bibinitperiod},
+           given={Nikola},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ae881fcf6ac9b22aa92dee5d520c260b}{%
+           family={Dobrovoljc},
+           familyi={D\bibinitperiod},
+           given={Kaja},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=955bdc47e58239de89550a5d0abd0e2a}{%
+           family={Krek},
+           familyi={K\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{66f1a3f2c837f0cf38846fccde628bd6}
+      \strng{fullhash}{60af113848e4b6cdf6a08e09af588e4b}
+      \strng{bibnamehash}{60af113848e4b6cdf6a08e09af588e4b}
+      \strng{authorbibnamehash}{60af113848e4b6cdf6a08e09af588e4b}
+      \strng{authornamehash}{66f1a3f2c837f0cf38846fccde628bd6}
+      \strng{authorfullhash}{60af113848e4b6cdf6a08e09af588e4b}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Language Resources and Evaluation}
+      \field{title}{The {J}anes project: language resources and tools for {S}lovene user generated content}
+      \field{volume}{53}
+      \field{year}{2019}
+      \field{pages}{223\bibrangedash 246}
+      \range{pages}{24}
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s10579-018-9425-z
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s10579-018-9425-z
+      \endverb
+    \endentry
+    \entry{gdpr2016}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d0baa957acb6522d22e3251a428fe067}{%
+           family={{European Parliament and Council of the European Union}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{d0baa957acb6522d22e3251a428fe067}
+      \strng{fullhash}{d0baa957acb6522d22e3251a428fe067}
+      \strng{bibnamehash}{d0baa957acb6522d22e3251a428fe067}
+      \strng{authorbibnamehash}{d0baa957acb6522d22e3251a428fe067}
+      \strng{authornamehash}{d0baa957acb6522d22e3251a428fe067}
+      \strng{authorfullhash}{d0baa957acb6522d22e3251a428fe067}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Regulation ({EU}) 2016/679 of the {European} {Parliament} and of the {Council} of 27 {April} 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing {Directive} 95/46/{EC} ({General} {Data} {Protection} {Regulation})}
+      \field{urlday}{21}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng
+      \endverb
+      \verb{url}
+      \verb https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng
+      \endverb
+    \endentry
+    \entry{failla2024bluesky}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=8d6ba6752e4fd4899cbbe9c508b278a6}{%
+           family={Failla},
+           familyi={F\bibinitperiod},
+           given={Andrea},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=739b0986c92653739a7bf42740ee4069}{%
+           family={Rossetti},
+           familyi={R\bibinitperiod},
+           given={Giulio},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5301fd405b498d55f0141ca2a72a82a6}
+      \strng{fullhash}{5301fd405b498d55f0141ca2a72a82a6}
+      \strng{bibnamehash}{5301fd405b498d55f0141ca2a72a82a6}
+      \strng{authorbibnamehash}{5301fd405b498d55f0141ca2a72a82a6}
+      \strng{authornamehash}{5301fd405b498d55f0141ca2a72a82a6}
+      \strng{authorfullhash}{5301fd405b498d55f0141ca2a72a82a6}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PLOS ONE}
+      \field{number}{11}
+      \field{title}{``{I}'m in the {B}luesky {T}onight'': {I}nsights from a Year Worth of Social Data}
+      \field{volume}{19}
+      \field{year}{2024}
+      \field{pages}{e0310330}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1371/journal.pone.0310330
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1371/journal.pone.0310330
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1371/journal.pone.0310330
+      \endverb
+    \endentry
+    \entry{aoir2019internet}{misc}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=31e50b68895625162f3adb8681e759d1}{%
+           family={Franzke},
+           familyi={F\bibinitperiod},
+           given={Aline\bibnamedelima Shakti},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d5ec82fff8157bc9613168d1e0c6ca9d}{%
+           family={Bechmann},
+           familyi={B\bibinitperiod},
+           given={Anja},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=20a126ff3e5c19f3b74e71862a25655e}{%
+           family={Zimmer},
+           familyi={Z\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9543979907210053b3ee8aa6e5c29225}{%
+           family={Ess},
+           familyi={E\bibinitperiod},
+           given={Charles},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2cac0192961ba4c7aa0835f0050d3eb1}{%
+           family={{Association of Internet Researchers}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{4cd0a9f4998eed1e253d14e66700fad3}
+      \strng{fullhash}{6018ea5b8fc1bc4db2a20c4680171f52}
+      \strng{bibnamehash}{6018ea5b8fc1bc4db2a20c4680171f52}
+      \strng{authorbibnamehash}{6018ea5b8fc1bc4db2a20c4680171f52}
+      \strng{authornamehash}{4cd0a9f4998eed1e253d14e66700fad3}
+      \strng{authorfullhash}{6018ea5b8fc1bc4db2a20c4680171f52}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Internet Research: Ethical Guidelines 3.0}
+      \field{urlday}{21}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://aoir.org/reports/ethics3.pdf
+      \endverb
+      \verb{url}
+      \verb https://aoir.org/reports/ethics3.pdf
+      \endverb
+    \endentry
+    \entry{studije2005korpusnem}{book}{}
+      \name{editor}{2}{}{%
+        {{un=0,uniquepart=base,hash=c5bd49133b047be2731eec981dd34500}{%
+           family={Gorjanc},
+           familyi={G\bibinitperiod},
+           given={Vojko},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=955bdc47e58239de89550a5d0abd0e2a}{%
+           family={Krek},
+           familyi={K\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Krtina}%
+      }
+      \strng{namehash}{4d5c9e7fc9177975dcb7e008128b52d9}
+      \strng{fullhash}{4d5c9e7fc9177975dcb7e008128b52d9}
+      \strng{bibnamehash}{4d5c9e7fc9177975dcb7e008128b52d9}
+      \strng{editorbibnamehash}{4d5c9e7fc9177975dcb7e008128b52d9}
+      \strng{editornamehash}{4d5c9e7fc9177975dcb7e008128b52d9}
+      \strng{editorfullhash}{4d5c9e7fc9177975dcb7e008128b52d9}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{title}{Študije o korpusnem jezikoslovju}
+      \field{year}{2005}
+    \endentry
+    \entry{hanny2026disaster}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=520dee10ce3783f2cf475ab2f3a4f587}{%
+           family={Hanny},
+           familyi={H\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=121808b34e10c501885fa0784df5b2cf}{%
+           family={Schmidt},
+           familyi={S\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f6659d7fee3b1fb702fb9238a44d1143}{%
+           family={Resch},
+           familyi={R\bibinitperiod},
+           given={Bernd},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f89dbfe62104b952cdf1971166dc3b03}
+      \strng{fullhash}{c0240a26d0a84f75109a85ab64bf2b29}
+      \strng{bibnamehash}{c0240a26d0a84f75109a85ab64bf2b29}
+      \strng{authorbibnamehash}{c0240a26d0a84f75109a85ab64bf2b29}
+      \strng{authornamehash}{f89dbfe62104b952cdf1971166dc3b03}
+      \strng{authorfullhash}{c0240a26d0a84f75109a85ab64bf2b29}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computational Social Science}
+      \field{title}{{Bluesky} as a Social Media Data Source for Disaster Management: Investigating Spatio-Temporal, Semantic and Emotional Patterns for Floods and Wildfires}
+      \field{volume}{9}
+      \field{year}{2026}
+      \field{pages}{16}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/s42001-025-00448-x
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s42001-025-00448-x
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s42001-025-00448-x
+      \endverb
+    \endentry
+    \entry{joulin2017bag}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=977d047821122d1c2e7aa855c30c8cf2}{%
+           family={Joulin},
+           familyi={J\bibinitperiod},
+           given={Armand},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ebdea2c3aa9f759075733b20dce6b873}{%
+           family={Grave},
+           familyi={G\bibinitperiod},
+           given={Edouard},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dfd2b635b41689b48c4b81ce769b940b}{%
+           family={Bojanowski},
+           familyi={B\bibinitperiod},
+           given={Piotr},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a2d359b12ca2fadf0b40136a73f021bb}{%
+           family={Mikolov},
+           familyi={M\bibinitperiod},
+           given={Tomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Valencia, Spain}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{b788779104e266bb92249aaafd790ae7}
+      \strng{fullhash}{7f7e632c405feed1b5caeb0c7b305d82}
+      \strng{bibnamehash}{7f7e632c405feed1b5caeb0c7b305d82}
+      \strng{authorbibnamehash}{7f7e632c405feed1b5caeb0c7b305d82}
+      \strng{authornamehash}{b788779104e266bb92249aaafd790ae7}
+      \strng{authorfullhash}{7f7e632c405feed1b5caeb0c7b305d82}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the 15th Conference of the {European Chapter of the Association for Computational Linguistics}: Volume 2, Short Papers}
+      \field{title}{Bag of Tricks for Efficient Text Classification}
+      \field{year}{2017}
+      \field{pages}{427\bibrangedash 431}
+      \range{pages}{5}
+      \verb{urlraw}
+      \verb https://aclanthology.org/E17-2068/
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/E17-2068/
+      \endverb
+    \endentry
+    \entry{kinderkurlanda2017archiving}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=58d8a1b200b03f39b67d14ab5474dc4f}{%
+           family={Kinder-Kurlanda},
+           familyi={K\bibinithyphendelim K\bibinitperiod},
+           given={Katharina},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ea17315fb594388c976b7344ce2e56d5}{%
+           family={Weller},
+           familyi={W\bibinitperiod},
+           given={Katrin},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1cb19524fbe8d79786985b75bcc8d798}{%
+           family={Zenk-Möltgen},
+           familyi={Z\bibinithyphendelim M\bibinitperiod},
+           given={Wolfgang},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=caec2bc4e6990b09f5473339c33cc124}{%
+           family={Pfeffer},
+           familyi={P\bibinitperiod},
+           given={Jürgen},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6fc2e21e9c786462d54f7e2eeae61c19}{%
+           family={Morstatter},
+           familyi={M\bibinitperiod},
+           given={Fred},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e1851da5a27f09d366d71c866c3c3799}
+      \strng{fullhash}{9f41be588a20b56ce2f757765777406a}
+      \strng{bibnamehash}{9f41be588a20b56ce2f757765777406a}
+      \strng{authorbibnamehash}{9f41be588a20b56ce2f757765777406a}
+      \strng{authornamehash}{e1851da5a27f09d366d71c866c3c3799}
+      \strng{authorfullhash}{9f41be588a20b56ce2f757765777406a}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Big Data \& Society}
+      \field{number}{2}
+      \field{title}{Archiving information from geotagged tweets to promote reproducibility and comparability in social media research}
+      \field{volume}{4}
+      \field{year}{2017}
+      \verb{doi}
+      \verb 10.1177/2053951717736336
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1177/2053951717736336
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1177/2053951717736336
+      \endverb
+    \endentry
+    \entry{kleppmann2024atproto}{article}{}
+      \name{author}{9}{}{%
+        {{un=0,uniquepart=base,hash=34b8d5b1d29d175527a6642f3ec8a76d}{%
+           family={Kleppmann},
+           familyi={K\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=51294e30e1c2d28340f42593efd39b06}{%
+           family={Frazee},
+           familyi={F\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9c41a59c91717a0846415fe45dc3e741}{%
+           family={Gold},
+           familyi={G\bibinitperiod},
+           given={Jake},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2873fdf7f1feb3e6f9afbebe9c46e3a2}{%
+           family={Graber},
+           familyi={G\bibinitperiod},
+           given={Jay},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ae7dd1b51c70d527ee2da7ee472477f8}{%
+           family={Holmgren},
+           familyi={H\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cd2375dabe0e965cd045b07bfad23c43}{%
+           family={Ivy},
+           familyi={I\bibinitperiod},
+           given={Devin},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=89c1f67637b6b7fe964853e1b312ee63}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={Jeromy},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3455d59224fbdc01f9aeb8cd7c89c5b8}{%
+           family={Newbold},
+           familyi={N\bibinitperiod},
+           given={Bryan},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=35a50d4a156d949f6684fb5521772f63}{%
+           family={Volpert},
+           familyi={V\bibinitperiod},
+           given={Jaz},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{190bc155ebad979b359619e3af909d01}
+      \strng{fullhash}{2d938611ba13adffc3781c4823b228db}
+      \strng{bibnamehash}{2d938611ba13adffc3781c4823b228db}
+      \strng{authorbibnamehash}{2d938611ba13adffc3781c4823b228db}
+      \strng{authornamehash}{190bc155ebad979b359619e3af909d01}
+      \strng{authorfullhash}{2d938611ba13adffc3781c4823b228db}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the {ACM} {CoNEXT}-2024 Workshop on the Decentralization of the Internet}
+      \field{title}{Bluesky and the {AT} Protocol: Usable Decentralized Social Media}
+      \field{year}{2024}
+      \field{pages}{1\bibrangedash 7}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1145/3694809.3700740
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/3694809.3700740
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/3694809.3700740
+      \endverb
+    \endentry
+    \entry{krek2020b-gf}{inbook}{}
+      \name{author}{9}{}{%
+        {{un=0,uniquepart=base,hash=955bdc47e58239de89550a5d0abd0e2a}{%
+           family={Krek},
+           familyi={K\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=deb5ae64f2721ebbcaa6fea3b54cc432}{%
+           family={Arhar\bibnamedelima Holdt},
+           familyi={A\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={Špela},
+           giveni={Š\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f7a9d2dfe8a09473429c59a7ca5107fa}{%
+           family={Erjavec},
+           familyi={E\bibinitperiod},
+           given={Tomaž},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6190c232003568a24c2a2b4a1dff1d38}{%
+           family={Čibej},
+           familyi={Č\bibinitperiod},
+           given={Jaka},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fabc459a4681d148e2f85796584835a3}{%
+           family={Repar},
+           familyi={R\bibinitperiod},
+           given={Andraz},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9ce1ce094131b582ce5892ec5f417749}{%
+           family={Gantar},
+           familyi={G\bibinitperiod},
+           given={Polona},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=24de4e3994b979e459a4b6c29c7ae830}{%
+           family={Ljubešić},
+           familyi={L\bibinitperiod},
+           given={Nikola},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=54d9567d0390dff714de83904b8fd557}{%
+           family={Kosem},
+           familyi={K\bibinitperiod},
+           given={Iztok},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ae881fcf6ac9b22aa92dee5d520c260b}{%
+           family={Dobrovoljc},
+           familyi={D\bibinitperiod},
+           given={Kaja},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{14}{}{%
+        {{hash=c341e33a4b6ea903f6c723a46650c1be}{%
+           family={Calzolari},
+           familyi={C\bibinitperiod},
+           given={Nicoletta},
+           giveni={N\bibinitperiod}}}%
+        {{hash=1029bdbe2b9621c579e6170c7f884b9b}{%
+           family={Béchet},
+           familyi={B\bibinitperiod},
+           given={Frédéric},
+           giveni={F\bibinitperiod}}}%
+        {{hash=8c61811b55d11f47d227ff17ca2ae97f}{%
+           family={Blache},
+           familyi={B\bibinitperiod},
+           given={Philippe},
+           giveni={P\bibinitperiod}}}%
+        {{hash=39867e26feb655084bcaa95ee00ad1b3}{%
+           family={Choukri},
+           familyi={C\bibinitperiod},
+           given={Khalid},
+           giveni={K\bibinitperiod}}}%
+        {{hash=a8af54ae168bb2ee38ee914570feadc6}{%
+           family={Cieri},
+           familyi={C\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+        {{hash=aa314aaff9cde7c75dd1dbefb7df9aee}{%
+           family={Declerck},
+           familyi={D\bibinitperiod},
+           given={Thierry},
+           giveni={T\bibinitperiod}}}%
+        {{hash=10ae9412b66f82e82d469aa7c2f6cd26}{%
+           family={Goggi},
+           familyi={G\bibinitperiod},
+           given={Sara},
+           giveni={S\bibinitperiod}}}%
+        {{hash=352a8b64ceb27ae8b7d155bfc7894a48}{%
+           family={Isahara},
+           familyi={I\bibinitperiod},
+           given={Hitoshi},
+           giveni={H\bibinitperiod}}}%
+        {{hash=f89d93ac385cd2c8048bd80b6bec272c}{%
+           family={Maegaard},
+           familyi={M\bibinitperiod},
+           given={Bente},
+           giveni={B\bibinitperiod}}}%
+        {{hash=bdf0b8f2adba0ed452d8c7a080e79edb}{%
+           family={Mariani},
+           familyi={M\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0a76eb2e98b2e0f5a4a2d3ee5cfed973}{%
+           family={Mazo},
+           familyi={M\bibinitperiod},
+           given={Hélène},
+           giveni={H\bibinitperiod}}}%
+        {{hash=bfec001866fc980a5a370b3f8f617c1d}{%
+           family={Moreno},
+           familyi={M\bibinitperiod},
+           given={Asuncion},
+           giveni={A\bibinitperiod}}}%
+        {{hash=663e887ebca3a6dfcd35d2bbf8163b42}{%
+           family={Odijk},
+           familyi={O\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9d79dd4fb50589491e453c48e1d3c56a}{%
+           family={Piperidis},
+           familyi={P\bibinitperiod},
+           given={Stelios},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \list{location}{1}{%
+        {Marseille, France}%
+      }
+      \list{publisher}{1}{%
+        {European Language Resources Association}%
+      }
+      \strng{namehash}{f33047d528f5d313e21036be47f83a56}
+      \strng{fullhash}{e621a23e4e9aef75b0df2dd8d0a62a4c}
+      \strng{bibnamehash}{e621a23e4e9aef75b0df2dd8d0a62a4c}
+      \strng{authorbibnamehash}{e621a23e4e9aef75b0df2dd8d0a62a4c}
+      \strng{authornamehash}{f33047d528f5d313e21036be47f83a56}
+      \strng{authorfullhash}{e621a23e4e9aef75b0df2dd8d0a62a4c}
+      \strng{editorbibnamehash}{a09040545517113a0917974fce092d91}
+      \strng{editornamehash}{c0f71bf98493a021e0ad741a5193b2ff}
+      \strng{editorfullhash}{a09040545517113a0917974fce092d91}
+      \field{extraname}{1}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We describe a new version of the Gigafida reference corpus of Slovene. In addition to updating the corpus with new material and annotating it with better tools, the focus of the upgrade was also on its transformation from a general reference corpus, which contains all language variants including non-standard language, to the corpus of standard (written) Slovene. This decision could be implemented as new corpora dedicated specifically to non-standard language emerged recently. In the new version, the whole Gigafida corpus was deduplicated for the first time, which facilitates automatic extraction of data for the purposes of compilation of new lexicographic resources such as the collocations dictionary and the thesaurus of Slovene.}
+      \field{booktitle}{Proceedings of the Twelfth Language Resources and Evaluation Conference}
+      \field{isbn}{979-10-95546-34-4}
+      \field{title}{Gigafida 2.0: The Reference Corpus of Written Standard {S}lovene}
+      \field{year}{2020}
+      \field{pages}{3340\bibrangedash 3345}
+      \range{pages}{6}
+      \verb{urlraw}
+      \verb https://aclanthology.org/2020.lrec-1.409/
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/2020.lrec-1.409/
+      \endverb
+    \endentry
+    \entry{krek2020a-ssj500k}{inbook}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=955bdc47e58239de89550a5d0abd0e2a}{%
+           family={Krek},
+           familyi={K\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f7a9d2dfe8a09473429c59a7ca5107fa}{%
+           family={Erjavec},
+           familyi={E\bibinitperiod},
+           given={Tomaž},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ae881fcf6ac9b22aa92dee5d520c260b}{%
+           family={Dobrovoljc},
+           familyi={D\bibinitperiod},
+           given={Kaja},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9ce1ce094131b582ce5892ec5f417749}{%
+           family={Gantar},
+           familyi={G\bibinitperiod},
+           given={Polona},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=deb5ae64f2721ebbcaa6fea3b54cc432}{%
+           family={Arhar\bibnamedelima Holdt},
+           familyi={A\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={Špela},
+           giveni={Š\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6190c232003568a24c2a2b4a1dff1d38}{%
+           family={Čibej},
+           familyi={Č\bibinitperiod},
+           given={Jaka},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f4f9358543fe707e3f6396902a814b8e}{%
+           family={Brank},
+           familyi={B\bibinitperiod},
+           given={Janez},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=641bada79a79cd709cd2071ab9318c36}{%
+           family={Fišer},
+           familyi={F\bibinitperiod},
+           given={Darja},
+           giveni={D\bibinitperiod}}}%
+        {{hash=f7a9d2dfe8a09473429c59a7ca5107fa}{%
+           family={Erjavec},
+           familyi={E\bibinitperiod},
+           given={Tomaž},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Ljubljana}%
+      }
+      \list{publisher}{1}{%
+        {Inštitut za novejšo zgodovino}%
+      }
+      \strng{namehash}{f33047d528f5d313e21036be47f83a56}
+      \strng{fullhash}{d456cfdd2f92fa497cd204c6ea062f4f}
+      \strng{bibnamehash}{d456cfdd2f92fa497cd204c6ea062f4f}
+      \strng{authorbibnamehash}{d456cfdd2f92fa497cd204c6ea062f4f}
+      \strng{authornamehash}{f33047d528f5d313e21036be47f83a56}
+      \strng{authorfullhash}{d456cfdd2f92fa497cd204c6ea062f4f}
+      \strng{editorbibnamehash}{89ddcf2fd64d24c41b1e002570b0c31e}
+      \strng{editornamehash}{89ddcf2fd64d24c41b1e002570b0c31e}
+      \strng{editorfullhash}{89ddcf2fd64d24c41b1e002570b0c31e}
+      \field{extraname}{2}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Jezikovne tehnologije in digitalna humanistika: Zbornik konference}
+      \field{title}{The ssj500k Training Corpus for Slovene Language Processing}
+      \field{year}{2020}
+      \field{pages}{24\bibrangedash 33}
+      \range{pages}{10}
+      \verb{urlraw}
+      \verb http://nl.ijs.si/jtdh20/pdf/JT-DH_2020_Krek-et-al_The-ssj500k-Training-Corpus-for-Slovene--Language-Processing.pdf
+      \endverb
+      \verb{url}
+      \verb http://nl.ijs.si/jtdh20/pdf/JT-DH_2020_Krek-et-al_The-ssj500k-Training-Corpus-for-Slovene--Language-Processing.pdf
+      \endverb
+    \endentry
+    \entry{gigafida-clarin}{book}{}
+      \name{author}{17}{}{%
+        {{un=0,uniquepart=base,hash=955bdc47e58239de89550a5d0abd0e2a}{%
+           family={Krek},
+           familyi={K\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f7a9d2dfe8a09473429c59a7ca5107fa}{%
+           family={Erjavec},
+           familyi={E\bibinitperiod},
+           given={Tomaž},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f617d2d93fd893258d0c4d8469ba63d6}{%
+           family={Repar},
+           familyi={R\bibinitperiod},
+           given={Andraž},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6190c232003568a24c2a2b4a1dff1d38}{%
+           family={Čibej},
+           familyi={Č\bibinitperiod},
+           given={Jaka},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=deb5ae64f2721ebbcaa6fea3b54cc432}{%
+           family={{Arhar Holdt}},
+           familyi={A\bibinitperiod},
+           given={Špela},
+           giveni={Š\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9ce1ce094131b582ce5892ec5f417749}{%
+           family={Gantar},
+           familyi={G\bibinitperiod},
+           given={Polona},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=54d9567d0390dff714de83904b8fd557}{%
+           family={Kosem},
+           familyi={K\bibinitperiod},
+           given={Iztok},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a2e36e3ed6ddb867078118302f52041f}{%
+           family={{Robnik Šikonja}},
+           familyi={R\bibinitperiod},
+           given={Marko},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=24de4e3994b979e459a4b6c29c7ae830}{%
+           family={Ljubešić},
+           familyi={L\bibinitperiod},
+           given={Nikola},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ae881fcf6ac9b22aa92dee5d520c260b}{%
+           family={Dobrovoljc},
+           familyi={D\bibinitperiod},
+           given={Kaja},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8eb12d37c1f68e5ed0a2b63f2a2195d5}{%
+           family={Laskowski},
+           familyi={L\bibinitperiod},
+           given={Cyprian},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c9ddcbffca69ef5a5950d31d6e0b1438}{%
+           family={Grčar},
+           familyi={G\bibinitperiod},
+           given={Miha},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=26bedd542b67e34671fe9217a064bee6}{%
+           family={Holozan},
+           familyi={H\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9d2a60972cd9afcfb07b05cb9c774ea1}{%
+           family={Šuster},
+           familyi={Š\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c5bd49133b047be2731eec981dd34500}{%
+           family={Gorjanc},
+           familyi={G\bibinitperiod},
+           given={Vojko},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=24876c260c0c42fc277f522652ef6f84}{%
+           family={Stabej},
+           familyi={S\bibinitperiod},
+           given={Marko},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6cbcd68979dc45968247d3adf5ee7255}{%
+           family={Logar},
+           familyi={L\bibinitperiod},
+           given={Nataša},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Slovenian language resource repository {CLARIN}.{SI}}%
+      }
+      \strng{namehash}{f33047d528f5d313e21036be47f83a56}
+      \strng{fullhash}{77be65dad87dcbd8ee85ad3cbbd4ed3b}
+      \strng{bibnamehash}{77be65dad87dcbd8ee85ad3cbbd4ed3b}
+      \strng{authorbibnamehash}{77be65dad87dcbd8ee85ad3cbbd4ed3b}
+      \strng{authornamehash}{f33047d528f5d313e21036be47f83a56}
+      \strng{authorfullhash}{77be65dad87dcbd8ee85ad3cbbd4ed3b}
+      \field{extraname}{3}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Corpus of Written Standard {Slovene Gigafida} 2.0}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb http://hdl.handle.net/11356/1320
+      \endverb
+      \verb{url}
+      \verb http://hdl.handle.net/11356/1320
+      \endverb
+    \endentry
+    \entry{ljubesic2019neural}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=24de4e3994b979e459a4b6c29c7ae830}{%
+           family={Ljubešić},
+           familyi={L\bibinitperiod},
+           given={Nikola},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ae881fcf6ac9b22aa92dee5d520c260b}{%
+           family={Dobrovoljc},
+           familyi={D\bibinitperiod},
+           given={Kaja},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Florence, Italy}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{38e97358ad3c87e91e34082da8ce9864}
+      \strng{fullhash}{38e97358ad3c87e91e34082da8ce9864}
+      \strng{bibnamehash}{38e97358ad3c87e91e34082da8ce9864}
+      \strng{authorbibnamehash}{38e97358ad3c87e91e34082da8ce9864}
+      \strng{authornamehash}{38e97358ad3c87e91e34082da8ce9864}
+      \strng{authorfullhash}{38e97358ad3c87e91e34082da8ce9864}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the 7th Workshop on Balto-Slavic Natural Language Processing}
+      \field{title}{What does Neural Bring? Analysing Improvements in Morphosyntactic Annotation and Lemmatisation of {S}lovenian, {C}roatian and {S}erbian}
+      \field{year}{2019}
+      \field{pages}{29\bibrangedash 34}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.18653/v1/W19-3704
+      \endverb
+      \verb{urlraw}
+      \verb https://aclanthology.org/W19-3704/
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/W19-3704/
+      \endverb
+    \endentry
+    \entry{lui2012langid}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=5fcb97721bafd60a691ea6953745d600}{%
+           family={Lui},
+           familyi={L\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=73eda808e90683df3ed357e4549e09f3}{%
+           family={Baldwin},
+           familyi={B\bibinitperiod},
+           given={Timothy},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Jeju Island, Korea}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{b831a97e7e5e2ee018112474a3ab3235}
+      \strng{fullhash}{b831a97e7e5e2ee018112474a3ab3235}
+      \strng{bibnamehash}{b831a97e7e5e2ee018112474a3ab3235}
+      \strng{authorbibnamehash}{b831a97e7e5e2ee018112474a3ab3235}
+      \strng{authornamehash}{b831a97e7e5e2ee018112474a3ab3235}
+      \strng{authorfullhash}{b831a97e7e5e2ee018112474a3ab3235}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the {ACL} 2012 System Demonstrations}
+      \field{title}{langid.py: An Off-the-shelf Language Identification Tool}
+      \field{year}{2012}
+      \field{pages}{25\bibrangedash 30}
+      \range{pages}{6}
+      \verb{urlraw}
+      \verb https://aclanthology.org/P12-3005/
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/P12-3005/
+      \endverb
+    \endentry
+    \entry{nakatani2010langdetect}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2b9fa39161136e16a52802cce23bdac1}{%
+           family={Nakatani},
+           familyi={N\bibinitperiod},
+           given={Shuyo},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2b9fa39161136e16a52802cce23bdac1}
+      \strng{fullhash}{2b9fa39161136e16a52802cce23bdac1}
+      \strng{bibnamehash}{2b9fa39161136e16a52802cce23bdac1}
+      \strng{authorbibnamehash}{2b9fa39161136e16a52802cce23bdac1}
+      \strng{authornamehash}{2b9fa39161136e16a52802cce23bdac1}
+      \strng{authorfullhash}{2b9fa39161136e16a52802cce23bdac1}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Software library}
+      \field{title}{Language Detection Library for {Java}}
+      \field{year}{2010}
+      \verb{urlraw}
+      \verb https://github.com/shuyo/language-detection
+      \endverb
+      \verb{url}
+      \verb https://github.com/shuyo/language-detection
+      \endverb
+    \endentry
+    \entry{nguyen2021trankit}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=094e851e5449c19fd21df7aff36b1676}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={Minh\bibnamedelima Van},
+           giveni={M\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=605d2a90a490ef426b33a9d775ec86bd}{%
+           family={Lai},
+           familyi={L\bibinitperiod},
+           given={Viet\bibnamedelima Dac},
+           giveni={V\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=20d7ed454b1d0637f2f73ef025110c3f}{%
+           family={Pouran\bibnamedelimb Ben\bibnamedelima Veyseh},
+           familyi={P\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim V\bibinitperiod},
+           given={Amir},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d564830b6141d6a2ed2ca2afebd5cb3b}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={Thien\bibnamedelima Huu},
+           giveni={T\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Online}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{ec3299a302bb18b19d188eb30c41af97}
+      \strng{fullhash}{c90d2d357c2bbb53fc98d4f532aaa119}
+      \strng{bibnamehash}{c90d2d357c2bbb53fc98d4f532aaa119}
+      \strng{authorbibnamehash}{c90d2d357c2bbb53fc98d4f532aaa119}
+      \strng{authornamehash}{ec3299a302bb18b19d188eb30c41af97}
+      \strng{authorfullhash}{c90d2d357c2bbb53fc98d4f532aaa119}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics: System Demonstrations}
+      \field{title}{Trankit: A Light-Weight Transformer-based Toolkit for Multilingual Natural Language Processing}
+      \field{year}{2021}
+      \field{pages}{80\bibrangedash 90}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.18653/v1/2021.eacl-demos.10
+      \endverb
+      \verb{urlraw}
+      \verb https://aclanthology.org/2021.eacl-demos.10/
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/2021.eacl-demos.10/
+      \endverb
+    \endentry
+    \entry{parliamentaryCorpus}{book}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=86cb997c6944d5f76063b570079dfdc1}{%
+           family={Pančur},
+           familyi={P\bibinitperiod},
+           given={Andrej},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f7a9d2dfe8a09473429c59a7ca5107fa}{%
+           family={Erjavec},
+           familyi={E\bibinitperiod},
+           given={Tomaž},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ff0eb502fcadf0badacf9510f6de4d45}{%
+           family={Meden},
+           familyi={M\bibinitperiod},
+           given={Katja},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dbc35c105f4ffbda59a29e4f3b2a3cb1}{%
+           family={Ojsteršek},
+           familyi={O\bibinitperiod},
+           given={Mihael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=79c41dd411a7b461bab41f3823111443}{%
+           family={Šorn},
+           familyi={Š\bibinitperiod},
+           given={Mojca},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3d2da1c203f1ed16f44b89f3d0732a04}{%
+           family={Blaj\bibnamedelima Hribar},
+           familyi={B\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={Neja},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Slovenian language resource repository {CLARIN}.{SI}}%
+      }
+      \strng{namehash}{0e02658aaac8bcdff3f759a5e3deaf53}
+      \strng{fullhash}{c0ba784f0341bf6eee8cd842961e47fd}
+      \strng{bibnamehash}{c0ba784f0341bf6eee8cd842961e47fd}
+      \strng{authorbibnamehash}{c0ba784f0341bf6eee8cd842961e47fd}
+      \strng{authornamehash}{0e02658aaac8bcdff3f759a5e3deaf53}
+      \strng{authorfullhash}{c0ba784f0341bf6eee8cd842961e47fd}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Slovenian parliamentary corpus (1990-2022) {siParl} 3.0}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb http://hdl.handle.net/11356/1748
+      \endverb
+      \verb{url}
+      \verb http://hdl.handle.net/11356/1748
+      \endverb
+    \endentry
+    \entry{parvini2024bluesky-election}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=72541c1a32cae6bfc7f39afd82f9d53b}{%
+           family={Parvini},
+           familyi={P\bibinitperiod},
+           given={Sarah},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{72541c1a32cae6bfc7f39afd82f9d53b}
+      \strng{fullhash}{72541c1a32cae6bfc7f39afd82f9d53b}
+      \strng{bibnamehash}{72541c1a32cae6bfc7f39afd82f9d53b}
+      \strng{authorbibnamehash}{72541c1a32cae6bfc7f39afd82f9d53b}
+      \strng{authornamehash}{72541c1a32cae6bfc7f39afd82f9d53b}
+      \strng{authorfullhash}{72541c1a32cae6bfc7f39afd82f9d53b}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{11}
+      \field{title}{Bluesky Has Added 1 Million Users Since the {US} Election as People Seek Alternatives to {X}}
+      \field{urlday}{22}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://apnews.com/article/d78de194e0e85f803652b70b161a963b
+      \endverb
+      \verb{url}
+      \verb https://apnews.com/article/d78de194e0e85f803652b70b161a963b
+      \endverb
+    \endentry
+    \entry{quelle2025bluesky}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=563d5a62d7735e4a1e18c4a6b78100a1}{%
+           family={Quelle},
+           familyi={Q\bibinitperiod},
+           given={Dorian},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ac0c191dca7abe95069f070e346a58ae}{%
+           family={Bovet},
+           familyi={B\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{dc3fd6164915285e221d1a01f62fdae3}
+      \strng{fullhash}{dc3fd6164915285e221d1a01f62fdae3}
+      \strng{bibnamehash}{dc3fd6164915285e221d1a01f62fdae3}
+      \strng{authorbibnamehash}{dc3fd6164915285e221d1a01f62fdae3}
+      \strng{authornamehash}{dc3fd6164915285e221d1a01f62fdae3}
+      \strng{authorfullhash}{dc3fd6164915285e221d1a01f62fdae3}
+      \field{sortinit}{Q}
+      \field{sortinithash}{ce69a400a872ddd02ee7fdb3b38c6abd}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PLOS ONE}
+      \field{number}{2}
+      \field{title}{Bluesky: Network Topology, Polarization, and Algorithmic Curation}
+      \field{volume}{20}
+      \field{year}{2025}
+      \field{pages}{e0318034}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1371/journal.pone.0318034
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1371/journal.pone.0318034
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1371/journal.pone.0318034
+      \endverb
+    \endentry
+    \entry{tjongKimSang2025bluesky}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3598dd76ebf5199b470f2687c2028cf0}{%
+           family={{Tjong Kim Sang}},
+           familyi={T\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Amsterdam, Netherlands}%
+      }
+      \list{publisher}{1}{%
+        {Zenodo}%
+      }
+      \strng{namehash}{3598dd76ebf5199b470f2687c2028cf0}
+      \strng{fullhash}{3598dd76ebf5199b470f2687c2028cf0}
+      \strng{bibnamehash}{3598dd76ebf5199b470f2687c2028cf0}
+      \strng{authorbibnamehash}{3598dd76ebf5199b470f2687c2028cf0}
+      \strng{authornamehash}{3598dd76ebf5199b470f2687c2028cf0}
+      \strng{authorfullhash}{3598dd76ebf5199b470f2687c2028cf0}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Digital Humanities Benelux 2025}
+      \field{title}{Using {Bluesky} for Social Media Analysis}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.5281/zenodo.15650889
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.5281/zenodo.15650889
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.5281/zenodo.15650889
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

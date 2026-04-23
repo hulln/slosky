@@ -1,0 +1,25 @@
+{
+  "input": "outputs/final/final_sl_corpus_20260416.jsonl",
+  "allowed_decisions": [
+    "core_tag_supported",
+    "review_langdetect_only",
+    "review_langid_only",
+    "review_model_consensus_only"
+  ],
+  "counts": {
+    "rows": 3993,
+    "rows_with_disallowed_decision": 0,
+    "blank_text_rows": 0,
+    "empty_after_project_cleaning": 0,
+    "alpha_0_rows": 0,
+    "alpha_lt_20_rows": 0,
+    "rows_with_emoji": 615,
+    "rows_with_hashtag": 61,
+    "rows_with_mention": 46,
+    "rows_with_link_domains": 239,
+    "decision::core_tag_supported": 3247,
+    "decision::review_model_consensus_only": 626,
+    "decision::review_langid_only": 75,
+    "decision::review_langdetect_only": 45
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "total_rows": 300,
+  "label_counts": {
+    "Not-Slovene": 40,
+    "Undeterminable/too-short": 44,
+    "Slovene-dominant": 214,
+    "Mixed-with-Slovene": 2
+  },
+  "acceptable_rows": 216,
+  "acceptable_rate_total": 0.72,
+  "undeterminable_rows": 44,
+  "non_undeterminable_rows": 256,
+  "acceptable_rate_non_undeterminable": 0.8438,
+  "matched_source_rows": 300,
+  "decision_counts": {
+    "review_short_tagged": 117,
+    "review_tag_only": 53,
+    "review_model_consensus_only": 109,
+    "review_langdetect_only": 10,
+    "review_langid_only": 11
+  },
+  "decision_label_counts": {
+    "review_langdetect_only || Slovene-dominant": 10,
+    "review_langid_only || Slovene-dominant": 11,
+    "review_model_consensus_only || Slovene-dominant": 109,
+    "review_short_tagged || Mixed-with-Slovene": 2,
+    "review_short_tagged || Not-Slovene": 15,
+    "review_short_tagged || Slovene-dominant": 62,
+    "review_short_tagged || Undeterminable/too-short": 38,
+    "review_tag_only || Not-Slovene": 25,
+    "review_tag_only || Slovene-dominant": 22,
+    "review_tag_only || Undeterminable/too-short": 6
+  }
+}

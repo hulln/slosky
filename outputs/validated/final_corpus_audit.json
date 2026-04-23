@@ -1,0 +1,25 @@
+{
+  "input": "outputs/final/final_sl_corpus.jsonl",
+  "allowed_decisions": [
+    "core_tag_supported",
+    "review_langdetect_only",
+    "review_langid_only",
+    "review_model_consensus_only"
+  ],
+  "counts": {
+    "rows": 141013,
+    "rows_with_disallowed_decision": 0,
+    "blank_text_rows": 0,
+    "empty_after_project_cleaning": 0,
+    "alpha_0_rows": 0,
+    "alpha_lt_20_rows": 0,
+    "rows_with_emoji": 27491,
+    "rows_with_hashtag": 6872,
+    "rows_with_mention": 1653,
+    "rows_with_link_domains": 17838,
+    "decision::core_tag_supported": 85094,
+    "decision::review_model_consensus_only": 46134,
+    "decision::review_langid_only": 5632,
+    "decision::review_langdetect_only": 4153
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "rows_total": 600,
+  "rows_comparable": 477,
+  "thresholds": {
+    "fasttext_threshold": 0.5,
+    "lingua_threshold": 0.5,
+    "langdetect_threshold": 0.9,
+    "min_alpha_chars": 20,
+    "lingua_languages": [
+      "sl",
+      "en",
+      "hr",
+      "sr",
+      "bs",
+      "de",
+      "it"
+    ],
+    "fasttext_model": "models/lid.176.bin"
+  },
+  "bucket_counts": {
+    "fasttext_signal+lingua_signal+langid_signal+langdetect_signal": 229,
+    "lingua_signal+langid_signal+langdetect_signal": 110,
+    "langid_signal": 18,
+    "lingua_signal+langid_signal": 20,
+    "fasttext_signal+langid_signal+langdetect_signal": 7,
+    "langdetect_signal": 6,
+    "langid_signal+langdetect_signal": 8,
+    "fasttext_signal+lingua_signal+langdetect_signal": 11,
+    "fasttext_signal+langid_signal": 3,
+    "lingua_signal+langdetect_signal": 12,
+    "fasttext_signal+lingua_signal+langid_signal": 5,
+    "fasttext_signal+langdetect_signal": 1,
+    "short_rows": 117,
+    "none": 43,
+    "lingua_signal": 9,
+    "fasttext_signal": 1
+  },
+  "detectors": {
+    "fasttext": {
+      "predicted_rows": 257,
+      "true_positives": 257,
+      "false_positives": 0,
+      "precision": 1.0,
+      "recall": 0.5686
+    },
+    "lingua": {
+      "predicted_rows": 396,
+      "true_positives": 396,
+      "false_positives": 0,
+      "precision": 1.0,
+      "recall": 0.8761
+    },
+    "langid": {
+      "predicted_rows": 400,
+      "true_positives": 400,
+      "false_positives": 0,
+      "precision": 1.0,
+      "recall": 0.885
+    },
+    "langdetect": {
+      "predicted_rows": 384,
+      "true_positives": 384,
+      "false_positives": 0,
+      "precision": 1.0,
+      "recall": 0.8496
+    }
+  },
+  "pair_consensus": {
+    "fasttext_plus_lingua": {
+      "predicted_rows": 245,
+      "true_positives": 245,
+      "false_positives": 0,
+      "precision": 1.0,
+      "recall": 0.542
+    },
+    "langid_plus_langdetect": {
+      "predicted_rows": 354,
+      "true_positives": 354,
+      "false_positives": 0,
+      "precision": 1.0,
+      "recall": 0.7832
+    }
+  }
+}

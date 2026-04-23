@@ -1,0 +1,34 @@
+{
+  "input": "outputs/final/final_sl_corpus.jsonl",
+  "rows_analyzed": 141013,
+  "unique_authors": 432,
+  "partial_final_month": {
+    "last_month": "2026-04",
+    "last_complete_month": "2026-03",
+    "is_partial": true,
+    "note": "Final observed month 2026-04 is partial (last timestamp: 2026-04-16T08:04:41.860109+00:00); it is flagged and excluded from retention windows, monthly period medians, and tests."
+  },
+  "structural_break": {
+    "october_2024": {
+      "posts_total": 31,
+      "authors_active": 13,
+      "authors_new": 8
+    },
+    "november_2024": {
+      "posts_total": 5984,
+      "authors_active": 196,
+      "authors_new": 172
+    },
+    "posts_total_growth_pct": 19203.225806451614,
+    "authors_active_growth_pct": 1407.6923076923076
+  },
+  "output_files": [
+    "outputs/community_formation/monthly_community_metrics.csv",
+    "outputs/community_formation/figure_posts_per_month.png",
+    "outputs/community_formation/figure_active_and_new_authors.png",
+    "outputs/community_formation/figure_cumulative_authors.png",
+    "outputs/community_formation/figure_posts_per_active_author.png",
+    "outputs/community_formation/figure_retention.png",
+    "outputs/community_formation/summary_stats.md"
+  ]
+}

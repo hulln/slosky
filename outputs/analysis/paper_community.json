@@ -1,0 +1,26 @@
+{
+  "total_posts": 141013,
+  "total_authors": 432,
+  "post_types": {
+    "categorization": "exclusive hierarchy: reply > quote > original",
+    "reply": 96278,
+    "reply_pct": 68.3,
+    "reply_and_quote": 294,
+    "quote": 3218,
+    "quote_pct": 2.3,
+    "quote_any": 3512,
+    "original": 41517,
+    "original_pct": 29.4
+  },
+  "author_concentration": {
+    "gini_coefficient": 0.8212,
+    "top_1pct_authors": 4,
+    "top_1pct_posts_pct": 18.2,
+    "top_10pct_authors": 43,
+    "top_10pct_posts_pct": 69.6,
+    "authors_for_50pct_of_posts": 22,
+    "authors_for_80pct_of_posts": 62,
+    "median_posts_per_author": 35,
+    "max_posts_single_author": 10674
+  }
+}
