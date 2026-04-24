@@ -8,8 +8,8 @@ Use **one final corpus** as the main paper dataset.
 
 Main dataset:
 
-- [final_sl_corpus.jsonl](/home/nives/Projekti/slosky/outputs/final/final_sl_corpus.jsonl)
-- [final_sl_corpus.csv](/home/nives/Projekti/slosky/outputs/final/final_sl_corpus.csv)
+- [final_sl_corpus.jsonl](../../outputs/final/final_sl_corpus.jsonl)
+- [final_sl_corpus.csv](../../outputs/final/final_sl_corpus.csv)
 - `141,013` posts
 
 Reason:

@@ -5,7 +5,7 @@ This file is the simplest accurate summary of the project.
 Paper status:
 
 - the JTDH 2026 paper was submitted on `2026-04-23`
-- submission record: [paper/records/SUBMISSION-2026-04-23.md](/home/nives/Projekti/slosky/paper/records/SUBMISSION-2026-04-23.md)
+- submission record: [paper/records/SUBMISSION-2026-04-23.md](../paper/records/SUBMISSION-2026-04-23.md)
 
 ## What has already been done
 
@@ -19,7 +19,7 @@ We already built a **usable final paper corpus**.
 
 Current historical base:
 
-- [seed_author_posts.sqlite](/home/nives/Projekti/slosky/outputs/intermediate/seed_author_posts.sqlite)
+- [seed_author_posts.sqlite](../outputs/intermediate/seed_author_posts.sqlite)
 - `379,482` posts
 - `742` active authors
 - earliest recovered post: `2023-05-10T18:32:24.237Z`
@@ -27,18 +27,18 @@ Current historical base:
 
 Current official paper dataset:
 
-- [final_sl_corpus.jsonl](/home/nives/Projekti/slosky/outputs/final/final_sl_corpus.jsonl)
-- [final_sl_corpus.csv](/home/nives/Projekti/slosky/outputs/final/final_sl_corpus.csv)
+- [final_sl_corpus.jsonl](../outputs/final/final_sl_corpus.jsonl)
+- [final_sl_corpus.csv](../outputs/final/final_sl_corpus.csv)
 - `141,013` posts
 - earliest included post: `2023-08-09T13:51:59.646Z`
 - latest included post: `2026-04-16T08:04:41.860109Z`
 
 Important intermediate artifacts:
 
-- [strict_sl_core.jsonl](/home/nives/Projekti/slosky/outputs/intermediate/strict_sl_core.jsonl)
-- [strict_sl_review.jsonl](/home/nives/Projekti/slosky/outputs/intermediate/strict_sl_review.jsonl)
-- [strict_sl_core.csv](/home/nives/Projekti/slosky/outputs/intermediate/strict_sl_core.csv)
-- [strict_sl_review.csv](/home/nives/Projekti/slosky/outputs/intermediate/strict_sl_review.csv)
+- [strict_sl_core.jsonl](../outputs/intermediate/strict_sl_core.jsonl)
+- [strict_sl_review.jsonl](../outputs/intermediate/strict_sl_review.jsonl)
+- [strict_sl_core.csv](../outputs/intermediate/strict_sl_core.csv)
+- [strict_sl_review.csv](../outputs/intermediate/strict_sl_review.csv)
 - current counts:
   - `85,094` core posts
   - `122,889` review posts
@@ -49,7 +49,7 @@ Background collectors may still run, but they are not required for the current p
 
 Current running/resumable collector files live under:
 
-- [outputs/running/](/home/nives/Projekti/slosky/outputs/running)
+- [outputs/running/](../outputs/running)
 
 These are for improving and extending the corpus, not for defining the current paper dataset.
 
@@ -57,17 +57,17 @@ These are for improving and extending the corpus, not for defining the current p
 
 If you want the dataset you should actually use for the paper, use:
 
-- [final_sl_corpus.csv](/home/nives/Projekti/slosky/outputs/final/final_sl_corpus.csv)
-- [final_sl_corpus.jsonl](/home/nives/Projekti/slosky/outputs/final/final_sl_corpus.jsonl)
-- [quality-assurance.md](/home/nives/Projekti/slosky/docs/paper/quality-assurance.md)
+- [final_sl_corpus.csv](../outputs/final/final_sl_corpus.csv)
+- [final_sl_corpus.jsonl](../outputs/final/final_sl_corpus.jsonl)
+- [quality-assurance.md](paper/quality-assurance.md)
 
 Ignore the dated `*_20260416` and `*_full_20260416` corpus files unless a doc explicitly tells you to inspect them. The non-dated files above are now the clean current paths.
 
 If you want to validate the dataset, use:
 
-- [strict_core_validation_sample.csv](/home/nives/Projekti/slosky/outputs/samples/strict_core_validation_sample.csv)
-- [strict_review_validation_sample.csv](/home/nives/Projekti/slosky/outputs/samples/strict_review_validation_sample.csv)
-- [annotate_samples.html](/home/nives/Projekti/slosky/tools/annotate_samples.html)
+- [strict_core_validation_sample.csv](../outputs/samples/strict_core_validation_sample.csv)
+- [strict_review_validation_sample.csv](../outputs/samples/strict_review_validation_sample.csv)
+- [annotate_samples.html](../tools/annotate_samples.html)
 
 ## What is the next step
 

@@ -16,6 +16,7 @@ Source folders:
 - `img/figures/`: paper figures
 - `img/assets/`: template assets such as ORCID, ROR, and licence graphics
 - `records/`: submission notes and records
+- `submitted/`: tracked copies of the submitted PDFs
 
 Supporting files:
 

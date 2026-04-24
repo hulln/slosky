@@ -12,9 +12,9 @@ What this repo already contains:
 
 The paper was submitted to JTDH 2026 on `2026-04-23`.
 
-- submission record: [paper/records/SUBMISSION-2026-04-23.md](/home/nives/Projekti/slosky/paper/records/SUBMISSION-2026-04-23.md)
-- non-anonymous source: [paper/jtdh-manuscript-english.tex](/home/nives/Projekti/slosky/paper/jtdh-manuscript-english.tex)
-- anonymous source: [paper/jtdh-manuscript-english-anonymous.tex](/home/nives/Projekti/slosky/paper/jtdh-manuscript-english-anonymous.tex)
+- submission record: [paper/records/SUBMISSION-2026-04-23.md](paper/records/SUBMISSION-2026-04-23.md)
+- non-anonymous source: [paper/jtdh-manuscript-english.tex](paper/jtdh-manuscript-english.tex)
+- anonymous source: [paper/jtdh-manuscript-english-anonymous.tex](paper/jtdh-manuscript-english-anonymous.tex)
 
 ## Structure
 
@@ -31,4 +31,4 @@ The paper was submitted to JTDH 2026 on `2026-04-23`.
 - `paper/references-pdfs/` is local reading material and is ignored.
 - `outputs/running/` is mutable runtime state, not a stable release snapshot.
 
-Start with [docs/START-HERE.md](/home/nives/Projekti/slosky/docs/START-HERE.md), [paper/README.md](/home/nives/Projekti/slosky/paper/README.md), and [outputs/README.md](/home/nives/Projekti/slosky/outputs/README.md).
+Start with [docs/START-HERE.md](docs/START-HERE.md), [paper/README.md](paper/README.md), and [outputs/README.md](outputs/README.md).

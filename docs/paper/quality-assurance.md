@@ -6,15 +6,15 @@ This document summarizes what has already been checked about the current paper c
 
 The current paper dataset is:
 
-- [final_sl_corpus.jsonl](/home/nives/Projekti/slosky/outputs/final/final_sl_corpus.jsonl)
-- [final_sl_corpus.csv](/home/nives/Projekti/slosky/outputs/final/final_sl_corpus.csv)
+- [final_sl_corpus.jsonl](../../outputs/final/final_sl_corpus.jsonl)
+- [final_sl_corpus.csv](../../outputs/final/final_sl_corpus.csv)
 
 ## Structural audit
 
 The final corpus was structurally audited with:
 
-- [audit_final_corpus.py](/home/nives/Projekti/slosky/scripts/audit_final_corpus.py)
-- [final_corpus_audit.json](/home/nives/Projekti/slosky/outputs/validated/final_corpus_audit.json)
+- [audit_final_corpus.py](../../scripts/audit_final_corpus.py)
+- [final_corpus_audit.json](../../outputs/validated/final_corpus_audit.json)
 
 Current structural results:
 
@@ -31,7 +31,7 @@ This means the final corpus does not currently contain the blank, emoji-only, or
 
 Manual validation is documented in:
 
-- [validation-results.md](/home/nives/Projekti/slosky/docs/paper/validation-results.md)
+- [validation-results.md](validation-results.md)
 
 Current validation basis:
 

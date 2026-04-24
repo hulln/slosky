@@ -92,7 +92,7 @@ Practical interpretation:
 
 The file below records a four-detector comparison on the manually validated samples:
 
-- [detector_comparison_summary.json](/home/nives/Projekti/slosky/outputs/validated/detector_comparison_summary.json)
+- [detector_comparison_summary.json](../../outputs/validated/detector_comparison_summary.json)
 
 At the current thresholds and minimum-text rule, all four detectors were clean on the manually judged comparable rows in this sample. The main difference was recall, not observed precision.
 

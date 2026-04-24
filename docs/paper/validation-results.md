@@ -4,9 +4,9 @@
 
 Source file:
 
-- [strict_core_validation_sample.csv](/home/nives/Projekti/slosky/outputs/samples/strict_core_validation_sample.csv)
-- annotated copy: [strict_core_validation_sample_annotated.csv](/home/nives/Projekti/slosky/outputs/validated/strict_core_validation_sample_annotated.csv)
-- reproducible summary: [strict_core_validation_summary.json](/home/nives/Projekti/slosky/outputs/validated/strict_core_validation_summary.json)
+- [strict_core_validation_sample.csv](../../outputs/samples/strict_core_validation_sample.csv)
+- annotated copy: [strict_core_validation_sample_annotated.csv](../../outputs/validated/strict_core_validation_sample_annotated.csv)
+- reproducible summary: [strict_core_validation_summary.json](../../outputs/validated/strict_core_validation_summary.json)
 
 Manual review status:
 
@@ -28,9 +28,9 @@ Reproducibility note:
 
 Source file:
 
-- [strict_review_validation_sample.csv](/home/nives/Projekti/slosky/outputs/samples/strict_review_validation_sample.csv)
-- annotated copy: [strict_review_validation_sample_annotated.csv](/home/nives/Projekti/slosky/outputs/validated/strict_review_validation_sample_annotated.csv)
-- reproducible summary: [strict_review_validation_summary.json](/home/nives/Projekti/slosky/outputs/validated/strict_review_validation_summary.json)
+- [strict_review_validation_sample.csv](../../outputs/samples/strict_review_validation_sample.csv)
+- annotated copy: [strict_review_validation_sample_annotated.csv](../../outputs/validated/strict_review_validation_sample_annotated.csv)
+- reproducible summary: [strict_review_validation_summary.json](../../outputs/validated/strict_review_validation_summary.json)
 
 Manual review status:
 
@@ -72,10 +72,10 @@ Observed edge cases:
 
 Source files:
 
-- [optional_langid_only_validation_sample.csv](/home/nives/Projekti/slosky/outputs/validated/optional_langid_only_validation_sample.csv)
-- [optional_langid_only_validation_sample_annotated.csv](/home/nives/Projekti/slosky/outputs/validated/optional_langid_only_validation_sample_annotated.csv)
-- [optional_langdetect_only_validation_sample.csv](/home/nives/Projekti/slosky/outputs/validated/optional_langdetect_only_validation_sample.csv)
-- [optional_langdetect_only_validation_sample_annotated.csv](/home/nives/Projekti/slosky/outputs/validated/optional_langdetect_only_validation_sample_annotated.csv)
+- [optional_langid_only_validation_sample.csv](../../outputs/validated/optional_langid_only_validation_sample.csv)
+- [optional_langid_only_validation_sample_annotated.csv](../../outputs/validated/optional_langid_only_validation_sample_annotated.csv)
+- [optional_langdetect_only_validation_sample.csv](../../outputs/validated/optional_langdetect_only_validation_sample.csv)
+- [optional_langdetect_only_validation_sample_annotated.csv](../../outputs/validated/optional_langdetect_only_validation_sample_annotated.csv)
 
 Manual review status:
 

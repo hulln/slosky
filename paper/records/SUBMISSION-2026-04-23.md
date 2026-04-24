@@ -5,21 +5,21 @@ Submission track:
 - Student paper: Yes
 
 Submitted file:
-- Anonymous review PDF: `paper/build/jtdh-manuscript-english-anonymous.pdf`
+- Anonymous review PDF: [jtdh-manuscript-english-anonymous-2026-04-23.pdf](../submitted/jtdh-manuscript-english-anonymous-2026-04-23.pdf)
 
 Companion file:
-- Non-anonymous PDF: `paper/build/jtdh-manuscript-english.pdf`
+- Non-anonymous PDF: [jtdh-manuscript-english-2026-04-23.pdf](../submitted/jtdh-manuscript-english-2026-04-23.pdf)
 
 Title:
 - A Community in Formation: Corpus Construction and Initial Analysis of Slovene Posts on Bluesky
 
 Abstract/keywords entered in the form:
-- Taken from `paper/sections/00-abstract.tex`
+- Taken from [00-abstract.tex](../sections/front/00-abstract.tex)
 - Keywords: Bluesky; ATProto; Slovene; corpus construction; social media
 
 File hashes:
-- `eec6c4d35c3ddb4f4b282db704e7c543033863cf9fc41d466f611cf5139dee54`  `paper/build/jtdh-manuscript-english-anonymous.pdf`
-- `92c22202582b6fd7988a7c5ac325c5e54d4ed4d0f1c6aa7ca788fec4eb2186c4`  `paper/build/jtdh-manuscript-english.pdf`
+- `eec6c4d35c3ddb4f4b282db704e7c543033863cf9fc41d466f611cf5139dee54`  `paper/submitted/jtdh-manuscript-english-anonymous-2026-04-23.pdf`
+- `92c22202582b6fd7988a7c5ac325c5e54d4ed4d0f1c6aa7ca788fec4eb2186c4`  `paper/submitted/jtdh-manuscript-english-2026-04-23.pdf`
 
 Counts:
 - Main text word count (`texcount`, anonymous source): 6119 words in text

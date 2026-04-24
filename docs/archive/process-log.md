@@ -66,7 +66,7 @@ This file records the main project decisions in simple chronological order.
   - `Lingua`
   - `langid`
   - `langdetect`
-- This comparison was documented in [detector-choice.md](/home/nives/Projekti/slosky/docs/paper/detector-choice.md).
+- This comparison was documented in [detector-choice.md](../paper/detector-choice.md).
 
 ## 10. Outcome of the four-detector comparison
 

@@ -41,7 +41,7 @@ Right now, the main purpose of annotation is:
 
 Recommended workflow:
 
-1. Open [annotate_samples.html](/home/nives/Projekti/slosky/tools/annotate_samples.html) in a browser.
-2. Load [strict_core_validation_sample.csv](/home/nives/Projekti/slosky/outputs/samples/strict_core_validation_sample.csv) first.
+1. Open [annotate_samples.html](../../tools/annotate_samples.html) in a browser.
+2. Load [strict_core_validation_sample.csv](../../outputs/samples/strict_core_validation_sample.csv) first.
 3. Export the annotated file.
-4. Then do the same for [strict_review_validation_sample.csv](/home/nives/Projekti/slosky/outputs/samples/strict_review_validation_sample.csv).
+4. Then do the same for [strict_review_validation_sample.csv](../../outputs/samples/strict_review_validation_sample.csv).
