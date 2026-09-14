@@ -1,0 +1,31 @@
+{
+  "samples": {
+    "review_langdetect_only": {
+      "total_rows": 50,
+      "label_counts": {
+        "Slovene-dominant": 49,
+        "Not-Slovene": 1
+      },
+      "acceptable_rows": 49,
+      "acceptable_rate_total": 0.98,
+      "undeterminable_rows": 0,
+      "non_undeterminable_rows": 50,
+      "acceptable_rate_non_undeterminable": 0.98
+    },
+    "review_langid_only": {
+      "total_rows": 50,
+      "label_counts": {
+        "Slovene-dominant": 49,
+        "Mixed-with-Slovene": 1
+      },
+      "acceptable_rows": 50,
+      "acceptable_rate_total": 1.0,
+      "undeterminable_rows": 0,
+      "non_undeterminable_rows": 50,
+      "acceptable_rate_non_undeterminable": 1.0
+    }
+  },
+  "sampling_script": "scripts/sample_jsonl_by_decision.py",
+  "analysis_script": "scripts/analyze_validation_samples.py",
+  "sample_rows_status": "restricted"
+}

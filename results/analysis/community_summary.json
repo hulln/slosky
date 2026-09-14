@@ -1,0 +1,47 @@
+{
+  "input_stage": "final corpus (restricted)",
+  "rows_analyzed": 141013,
+  "unique_authors": 432,
+  "date_range": {
+    "earliest_month": "2023-08",
+    "latest_month": "2026-04",
+    "precision": "month",
+    "latest_month_is_partial": true
+  },
+  "structural_break": {
+    "october_2024": {"posts_total": 31, "authors_active": 13, "authors_new": 8},
+    "november_2024": {"posts_total": 5984, "authors_active": 196, "authors_new": 172},
+    "posts_total_growth_pct": 19203.225806451614,
+    "authors_active_growth_pct": 1407.6923076923076
+  },
+  "period_comparison": [
+    {
+      "period": "pre_surge_through_2024_10",
+      "total_posts": 178,
+      "total_active_authors": 30,
+      "median_monthly_posts_total": 10.0,
+      "median_monthly_authors_active": 3.0,
+      "median_posts_per_active_author": 2.3333333333333335,
+      "monthly_medians_exclude_partial_final_month": true
+    },
+    {
+      "period": "post_surge_from_2024_11",
+      "total_posts": 140835,
+      "total_active_authors": 429,
+      "median_monthly_posts_total": 7958.0,
+      "median_monthly_authors_active": 210.0,
+      "median_posts_per_active_author": 37.7286432160804,
+      "monthly_medians_exclude_partial_final_month": true
+    }
+  ],
+  "statistical_tests": [
+    {"metric": "posts_total", "n_pre_months": 15, "n_post_months": 17, "median_pre": 10.0, "median_post": 7958.0, "mann_whitney_u_post_vs_pre": 255.0, "p_value_two_sided": 1.6090876765325152e-06, "cliffs_delta_post_vs_pre": 1.0},
+    {"metric": "authors_active", "n_pre_months": 15, "n_post_months": 17, "median_pre": 3.0, "median_post": 210.0, "mann_whitney_u_post_vs_pre": 255.0, "p_value_two_sided": 1.5227831966359702e-06, "cliffs_delta_post_vs_pre": 1.0},
+    {"metric": "posts_per_active_author", "n_pre_months": 15, "n_post_months": 17, "median_pre": 2.3333333333333335, "median_post": 37.7286432160804, "mann_whitney_u_post_vs_pre": 255.0, "p_value_two_sided": 1.5810364189166897e-06, "cliffs_delta_post_vs_pre": 1.0}
+  ],
+  "reported_retention": {
+    "2024-11": {"author_retention_1m": 0.8662790697674418, "author_retention_3m": 0.9418604651162791},
+    "2024-12": {"author_retention_1m": 0.72, "author_retention_3m": 0.82}
+  },
+  "generating_script": "scripts/analyze_community_formation.py"
+}

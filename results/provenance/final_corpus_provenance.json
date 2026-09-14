@@ -1,0 +1,17 @@
+{
+  "historical_observation": {
+    "generated_on": "2026-04-17",
+    "implementation": "pre-Git working-tree version",
+    "implementation_relation": "The initial committed implementation at 6980344880bac5127b5738f23c4145384b95dc89 matches the historical behavior.",
+    "final_rows": 141013,
+    "final_corpus_sha256": "fe2883a74205240a9b18ab1c6c144d1ef163ddc412dff4853562676a19211d99"
+  },
+  "restricted_inputs": {
+    "strict_core_sha256": "3b46f531dc2635284fdf9ccb86025642b5aef0cf513b630e4c813745d3c80f08",
+    "strict_review_sha256": "40f333e38aa69a2ee012abdefd71662ad4a7dcb2a7a77348d9a0767e3dccea45"
+  },
+  "later_change": {"commit": "a01343330bbbb6ace5b3e9e56c730fe5adac2b34", "change": "added URI presence checks, URI deduplication, and duplicates_skipped metadata"},
+  "current_verification": {"accepted_rows_before_checks": 141013, "missing_uris": 0, "duplicate_uris": 0, "reconstructed_rows": 141013, "reconstructed_sha256": "fe2883a74205240a9b18ab1c6c144d1ef163ddc412dff4853562676a19211d99", "content_identical_to_historical_artifact": true},
+  "provenance_note": "The newer code is equivalent for these exact inputs but did not historically generate the original artifact.",
+  "generating_script": "scripts/build_final_sl_corpus.py"
+}

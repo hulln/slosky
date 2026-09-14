@@ -1,0 +1,9 @@
+{
+  "stage": "merged and deduplicated strict core exports",
+  "rows": 85094,
+  "duplicates_skipped": 1,
+  "date_range": {"earliest_month": "2023-08", "latest_month": "2026-04", "precision": "month"},
+  "decision_counts": {"core_tag_supported": 85094},
+  "generating_script": "scripts/merge_corpus_jsonl.py",
+  "underlying_rows_status": "restricted"
+}

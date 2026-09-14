@@ -1,0 +1,19 @@
+{
+  "release": "SUK 1.0",
+  "authoritative_source": "https://hdl.handle.net/11356/1747",
+  "source_archive": "SUK10.CoNLL-U.zip",
+  "source_archive_sha256": "a0311bfe5ddbf5456cbb680d5cbedcb40a92b43e033543a38c80a559f3b3142a",
+  "files_in_concatenation_order": [
+    {"name": "ambiga.ud.conllu", "sha256": "fe983f8fb62192d0b1f14e3fa1c7caab37b456a66d19987a4b4c0347939806c0"},
+    {"name": "elexiswsd.ud.conllu", "sha256": "c06c290fa9fda0b2c3482c932ce3b10b06d83d3454ea7970825a3f05808c3e74"},
+    {"name": "senticoref.ud.conllu", "sha256": "8dc8435eddadb2d49b556c44e84b721ede5ba540f4e41b98b15bf3f146291f2e"},
+    {"name": "ssj500k-syn.ud.conllu", "sha256": "80f457906de5da615b60443e93babf2b8d3586c112999e38231f5e4d49ffc21c"},
+    {"name": "ssj500k-tag.ud.conllu", "sha256": "5b5072a81b2ee1d37eae92bcdee258ce9dbdca28e9043272efe25a2c2fd62d07"}
+  ],
+  "preparation": "bytewise concatenation in the listed lexical order",
+  "prepared_input_name": "suk_all.ud.conllu",
+  "prepared_input_sha256": "4c98f07b3e8cf2754703c0d9e62d96c5d2ee030cbb2a15aac5855e9c8a6e6eb1",
+  "analysis_script": "scripts/analyze_linguistic_profile.py",
+  "result": "results/analysis/suk_linguistic_profile.json",
+  "private_reanalysis_verified": {"sentences": 48594, "tokens": 1025639, "words": 881554, "mattr_1000": 0.6093, "finite_verbs": 99132, "first_second_person_finite_pct": 11.6}
+}

@@ -1,0 +1,17 @@
+{
+  "authors": 432,
+  "pds_types": {
+    "bluesky_hosting": 423,
+    "eurosky_social": 9
+  },
+  "handle_types": {
+    "bsky_social": 395,
+    "custom_domain": 30,
+    "pds_subdomain": 7
+  },
+  "custom_domain_posts": 13303,
+  "custom_domain_posts_pct": 9.4,
+  "custom_handle_and_eurosky_hosting": 2,
+  "input_stage": "final corpus plus private PDS-resolution cache",
+  "generating_script": "scripts/analyze_for_paper.py"
+}

@@ -1,0 +1,42 @@
+# Environment for scripts/annotate_release_corpus.py
+#
+# Pinned from the working .venv-annot on 2026-08-05. The torch/transformers pair is
+# the constraint: Trankit 1.1.2 requires torch<2.1, and transformers 4.43.3 is the
+# newest release that works with tokenizers 0.19.x under that torch. Do not bump
+# these independently.
+#
+#   python3 -m venv .venv-annot
+#   .venv-annot/bin/python -m pip install -r requirements-annotation.txt
+#
+# Slovene models are downloaded separately on first use:
+#   python -c "import classla; classla.download('sl', type='web')"
+# Trankit fetches its Slovene xlm-roberta-large model on first pipeline init. If the
+# Trankit model server is unreachable, the same files are mirrored on Hugging Face at
+# uonlp/trankit under models/v1.0.0/xlm-roberta-large/slovenian.zip.
+#
+# Note: CLASSLA's Slovene POS and lemma models together need roughly 6-8 GB of RAM.
+# A machine with 8 GB total will be OOM-killed partway through loading.
+
+classla==2.2.1
+trankit==1.1.2
+
+torch==2.0.1
+transformers==4.43.3
+tokenizers==0.19.1
+adapters==1.0.0
+
+obeliks==1.1.6
+reldi-tokeniser==1.0.3
+
+numpy==1.26.4
+protobuf==4.21.2
+sentencepiece==0.2.1
+sacremoses==0.1.1
+safetensors==0.7.0
+huggingface-hub==0.24.7
+filelock==3.29.0
+regex==2026.4.4
+requests==2.28.0
+tqdm==4.67.3
+PyYAML==6.0.3
+lxml==6.1.0

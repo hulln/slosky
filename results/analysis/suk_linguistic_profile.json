@@ -1,0 +1,99 @@
+{
+  "input": "suk_all.ud.conllu",
+  "msd_notation": "en",
+  "mattr_window": 1000,
+  "subsets": {
+    "all": {
+      "posts": 48594,
+      "sentences": 48594,
+      "tokens": 1025639,
+      "words": 881554,
+      "word_types": 97609,
+      "lemma_types": 46362,
+      "hapax_types": 51372,
+      "hapax_pct_of_types": 52.6,
+      "raw_ttr": 0.1107,
+      "mattr_1000": 0.6093,
+      "median_words_per_post": 16,
+      "mean_words_per_post": 18.14,
+      "word_class_pct": {
+        "noun": 32.3,
+        "verb": 17.7,
+        "adjective": 11.8,
+        "adposition": 11.0,
+        "conjunction": 8.6,
+        "pronoun": 6.5,
+        "adverb": 5.2,
+        "particle": 3.4,
+        "numeral": 3.1,
+        "abbreviation": 0.2,
+        "residual": 0.2,
+        "interjection": 0.0
+      },
+      "word_class_counts": {
+        "noun": 284400,
+        "verb": 156321,
+        "adjective": 103968,
+        "adposition": 97287,
+        "conjunction": 75399,
+        "pronoun": 57004,
+        "adverb": 46237,
+        "particle": 29778,
+        "numeral": 27335,
+        "abbreviation": 1871,
+        "residual": 1859,
+        "interjection": 95
+      },
+      "token_class_counts": {
+        "noun": 284415,
+        "verb": 156321,
+        "punctuation": 143971,
+        "adjective": 103968,
+        "adposition": 97287,
+        "conjunction": 75399,
+        "pronoun": 57004,
+        "adverb": 46237,
+        "particle": 29778,
+        "numeral": 27335,
+        "residual": 1958,
+        "abbreviation": 1871,
+        "interjection": 95
+      },
+      "noun_verb_ratio": 1.82,
+      "finite_verbs": 99132,
+      "finite_verb_person_counts": {
+        "3": 81674,
+        "1": 8400,
+        "2": 3079
+      },
+      "first_second_person_finite_pct": 11.6,
+      "residual_subtypes": {
+        "foreign": 1452,
+        "url": 90
+      },
+      "foreign_token_pct_of_words": 0.2,
+      "top_common_noun_lemmas": {
+        "leto": 3775,
+        "odstotek": 1925,
+        "evro": 1755,
+        "država": 1643,
+        "banka": 1632,
+        "podjetje": 1491,
+        "družba": 1444,
+        "čas": 1282,
+        "mesto": 1269,
+        "dan": 1265,
+        "delo": 1227,
+        "svet": 1191,
+        "predsednik": 1189,
+        "milijon": 1174,
+        "vlada": 1014,
+        "človek": 969,
+        "uprava": 899,
+        "skupina": 850,
+        "primer": 800,
+        "del": 771
+      }
+    }
+  }
+}

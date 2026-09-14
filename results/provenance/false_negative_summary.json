@@ -1,0 +1,41 @@
+{
+  "candidate_pool": {
+    "posts_scanned": 379482,
+    "already_in_corpus": 141013,
+    "sl_tagged_excluded": 76826,
+    "too_short_excluded": 63675,
+    "candidate_pool_size": 97968,
+    "sample_size_requested": 200,
+    "sample_size_written": 200,
+    "random_seed": 20260416,
+    "minimum_alpha_characters": 20,
+    "sampling_rule": "active seed-author posts absent from the final corpus, without a Slovene language tag, and with at least 20 alphabetic characters after URL and @-mention stripping",
+    "input_stage": "expanded seed-author store and final corpus URI set",
+    "sampling_script": "scripts/sample_false_negative_candidates.py",
+    "sample_rows_status": "restricted"
+  },
+  "annotation": {
+    "total_rows": 200,
+    "label_counts": {
+      "Not-Slovene": 182,
+      "Slovene-dominant": 16,
+      "Mixed-with-Slovene": 1,
+      "Undeterminable/too-short": 1
+    },
+    "acceptable_rows": 17,
+    "acceptable_rate_total": 0.085,
+    "undeterminable_rows": 1,
+    "non_undeterminable_rows": 199,
+    "acceptable_rate_non_undeterminable": 0.0854
+  },
+  "calculation": {
+    "sample_false_negative_rate": 0.085,
+    "estimated_missed_posts": 8327.28,
+    "reported_rounded_missed_posts": 8300.0,
+    "final_corpus_size": 141013,
+    "estimated_percentage_of_final_corpus": 5.9053,
+    "formula": "candidate_pool_size * acceptable_rows / sample_size; estimated_missed_posts / final_corpus_size * 100"
+  },
+  "analysis_script": "scripts/analyze_validation_samples.py",
+  "annotation_rows_status": "restricted"
+}

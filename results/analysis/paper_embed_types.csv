@@ -1,0 +1,7 @@
+embed_kind,count,pct
+none,109740,77.8
+app.bsky.embed.external,15830,11.2
+app.bsky.embed.images,11264,8.0
+app.bsky.embed.record,3228,2.3
+app.bsky.embed.video,646,0.5
+app.bsky.embed.recordWithMedia,305,0.2

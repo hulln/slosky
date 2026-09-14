@@ -1,0 +1,20 @@
+{
+  "stage": "expanded seed-author collection store before language filtering",
+  "collection": "app.bsky.feed.post",
+  "filter_mode": "all-posts",
+  "active_posts": 379482,
+  "active_authors": 742,
+  "date_range": {
+    "earliest_month": "2023-05",
+    "latest_month": "2026-04",
+    "precision": "month"
+  },
+  "collection_scripts": [
+    "scripts/backfill_seed_authors.py",
+    "scripts/merge_atproto_stores.py"
+  ],
+  "audit_script": "scripts/audit_atproto_store.py",
+  "underlying_store_status": "restricted",
+  "restricted_store_sha256": "03329c90da1a31740d7307dd7df5a88cafcb30877f1e11dba1794608f72570f2",
+  "checksum_verification": "verified against the private store used for the paper snapshot"
+}

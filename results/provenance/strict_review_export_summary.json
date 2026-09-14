@@ -1,0 +1,9 @@
+{
+  "stage": "merged and deduplicated strict review exports",
+  "rows": 122889,
+  "duplicates_skipped": 0,
+  "date_range": {"earliest_month": "2023-06", "latest_month": "2026-04", "precision": "month"},
+  "decision_counts": {"review_model_consensus_only": 46134, "review_short_tagged": 47081, "review_langid_only": 5632, "review_tag_only": 19889, "review_langdetect_only": 4153},
+  "generating_script": "scripts/merge_corpus_jsonl.py",
+  "underlying_rows_status": "restricted"
+}
