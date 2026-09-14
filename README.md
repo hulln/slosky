@@ -32,6 +32,8 @@ Merging happens at three separate points: `merge_atproto_stores.py` merges the c
 
 Dependencies are in `pyproject.toml`. Linguistic annotation used a separate pinned environment, recorded in `requirements-annotation.txt`. Most scripts need the corpus data, which is not included here.
 
+**Development note:** Claude Code and ChatGPT Codex were used in developing and revising the codebase, as well as for code review and repository maintenance.
+
 ## Citation
 
 To be added.
