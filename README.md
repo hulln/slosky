@@ -4,6 +4,8 @@ SloSky is the corpus-construction workflow and aggregate analysis accompanying t
 
 This repository provides the methodology code and privacy-safe aggregate results. It is not a distribution of the corpus itself.
 
+**Paper:** Publication link to be added after publication.
+
 ## Data
 
 The underlying social-media corpus is not distributed. Post text, post and account identifiers, exact user chronology, validation rows, PDS-resolution data, pseudonymized full text, and linguistic annotation are restricted because they could enable reconstruction of a small identifiable community.
