@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the paper below."
+type: software
+title: "SloSky"
+authors:
+  - family-names: "Hüll"
+    given-names: "Nives"
+repository-code: "https://github.com/hulln/slosky"
+preferred-citation:
+  type: conference-paper
+  title: "A Community in Formation: Corpus Construction and Initial Analysis of Slovene Posts on Bluesky"
+  authors:
+    - family-names: "Hüll"
+      given-names: "Nives"
+  year: 2026
+  url: "https://zenodo.org/records/22766147"

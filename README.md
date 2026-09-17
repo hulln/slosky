@@ -37,6 +37,12 @@ Dependencies are in `pyproject.toml`. Linguistic annotation used a separate pinn
 
 **Development note:** Claude Code and ChatGPT Codex were used in developing and revising the codebase, as well as for code review and repository maintenance.
 
+## Reuse
+
+Code is available under the [MIT License](LICENSE). The original slides and
+aggregate results are available under [CC BY 4.0](CONTENT-LICENSE.md). The
+underlying corpus is not distributed or licensed here.
+
 ## Citation
 
-To be added.
+Hüll, N. (2026). *A Community in Formation: Corpus Construction and Initial Analysis of Slovene Posts on Bluesky*. Zenodo. https://zenodo.org/records/22766147
