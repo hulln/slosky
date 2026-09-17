@@ -2,7 +2,9 @@
 
 This repository contains the code and aggregate results for *A Community in Formation: Corpus Construction and Initial Analysis of Slovene Posts on Bluesky* (JT-DH 2026). The corpus is 141,013 Slovene posts from 432 authors, collected from Bluesky through ATProto and filtered using language metadata, automatic language identification, and manual validation.
 
-**Paper:** To be added.
+**Paper:** [A Community in Formation: Corpus Construction and Initial Analysis of Slovene Posts on Bluesky](https://zenodo.org/records/22766147) (Zenodo).
+
+**Presentation:** [JT-DH 2026 slides](presentation/slosky-jtdh-2026.pdf) (PDF).
 
 ## Data
 
@@ -25,6 +27,7 @@ Merging happens at three separate points: `merge_atproto_stores.py` merges the c
 - `scripts/` — collection, filtering, validation, and analysis commands
 - `src/slosky/` — shared modules used by the scripts
 - `results/` — aggregate results and provenance manifests
+- `presentation/` — conference presentation slides
 - `data/` — notes on the inputs; no corpus data
 - `tools/annotate_samples.html` — the manual validation interface
 
