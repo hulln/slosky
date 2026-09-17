@@ -4,13 +4,13 @@ type: software
 title: "SloSky"
 authors:
   - family-names: "Hüll"
-    given-names: "Nives"
+    given-names: "N."
 repository-code: "https://github.com/hulln/slosky"
 preferred-citation:
   type: conference-paper
   title: "A Community in Formation: Corpus Construction and Initial Analysis of Slovene Posts on Bluesky"
   authors:
     - family-names: "Hüll"
-      given-names: "Nives"
+      given-names: "N."
   year: 2026
   url: "https://zenodo.org/records/22766147"
