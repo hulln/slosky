@@ -45,4 +45,4 @@ underlying corpus is not distributed or licensed here.
 
 ## Citation
 
-Hüll, N. (2026). *A Community in Formation: Corpus Construction and Initial Analysis of Slovene Posts on Bluesky*. Zenodo. https://zenodo.org/records/22766147
+Hüll, N. (2026). *A Community in Formation: Corpus Construction and Initial Analysis of Slovene Posts on Bluesky* [Conference paper]. Zenodo. https://doi.org/10.5281/zenodo.22766147
